@@ -8,9 +8,17 @@ class Task5:
         self.columns = None
 
     def get_matrix(self):
+        """
+        Get matrix
+        :return: matrix
+        """
         return self.matrix
 
     def solve(self):
+        """
+        Solve this task
+        :return:
+        """
         TestNumPy.test()
         self.create_matrix()
         print(self.get_matrix())
@@ -22,6 +30,10 @@ class Task5:
         print(f"Значение медианы через формулу: {median}.")
 
     def create_matrix(self):
+        """
+        Get matrix with random initialization
+        :return:
+        """
         print("Введите количество строк: ")
         self.rows = user_input5.input_number()
         print("Введите количество столбцов: ")
@@ -29,6 +41,10 @@ class Task5:
         self.matrix = np.random.randint(-1000, 1000, (self.rows, self.columns))
 
     def find_column_with_min_sum(self):
+        """
+        Get column with minimal sum
+        :return: column, min_sum
+        """
         min_summ = 0
         column = None
         for i in range(self.columns):
@@ -41,6 +57,11 @@ class Task5:
 
     @staticmethod
     def get_median(column):
+        """
+        Get median
+        :param column:
+        :return: median
+        """
         column.sort()
         print(column)
         length = len(column)

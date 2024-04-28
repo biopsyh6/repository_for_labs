@@ -4,6 +4,10 @@ import numpy as np
 class TestNumPy:
     @staticmethod
     def test():
+        """
+        Test NumPy methods
+        :return:
+        """
         lst = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
         arr_np = np.array(lst)
         print("Тест функций numPy")

@@ -51,14 +51,17 @@ class SolveSin:
         y_series = [self.calculate_sum(xi, 0.001)[0] for xi in x]
         y_function = [math.sin(xi) for xi in x]
 
-        fig, ax = plt.subplots()
-        ax.grid(True)
+        fig, ax = plt.subplots() #Создание объекта рисунка и объекта осей
+        ax.grid(True) #Включение сетки
 
         plt.plot(x, y_series, color="green")
         plt.plot(x, y_function, color="red")
         plt.xlabel('x')
         plt.ylabel('sin(x)')
         plt.legend(['math.sin', 'taylor series for sin'])
+        plt.annotate("Синусоида", xy=(1, -0.3), xytext=(1, -0.3))
+        plt.title("График функции")
+        plt.text(-2, 0.3,"На диаграмме отображен график:\nсинусоида")
 
         if path_to_file:
             try:
