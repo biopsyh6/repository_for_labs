@@ -1,0 +1,11 @@
+{% extends 'cinema/admin/base_admin.html' %}
+
+{% block header %}List of Halls{% endblock %}
+
+{% block content %}
+        {% for hall in halls %}
+        <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+            <p style="margin-bottom: 2px;">Hall name: {{ hall.name }}</p>
+        </div>
+        {% endfor %}
+{% endblock %}

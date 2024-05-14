@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}<title>Your Cinema</title>{% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+    <div>
+        <a href="{% url 'home' %}">Home</a> |
+        <a href="{% url 'profile' %}">Profile</a> |
+        <a href="{% url 'main' %}">Main</a> |
+        <a href="{% url 'about' %}">About company</a> |
+        <a href="{% url 'news' %}">News</a> |
+        <a href="{% url 'faq' %}">FAQ</a> |
+        <a href="{% url 'contacts' %}">Contacts</a> |
+        <a href="{% url 'vacancies' %}">Vacancies</a> |
+        <a href="{% url 'reviews' %}">Reviews</a> |
+        <a href="{% url 'coupons' %}">Coupons</a> |
+        <a href="{% url 'cats' %}">Cat Facts</a> |
+    </div>
+    <div>
+            <a href="{% url 'to_tickets' %}">Tickets</a> |
+    </div>
+    <div>
+        {% if request.user.is_superuser %}
+            <a href="{% url 'to_admin' %}">Admin</a> |
+        {% endif %}
+    </div>
+
+    <h1>{% block header %}{% endblock header %}</h1>
+    <div>{% block content %}{% endblock content %}</div>
+</body>
+</html>

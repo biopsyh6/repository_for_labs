@@ -1,0 +1,11 @@
+<!-- templates/register.html -->
+{% block content %}
+<form method="POST" enctype='multipart/form-data'>
+    {% csrf_token %}
+    <center><h2>Sign Up</h2>
+    {{ user_form.as_p }}
+    {{ profile_form.as_p }}
+    <button type="submit">Register</button>
+ <p>Already have an account? <a href="{%url 'login' %}">Sign in</a></p></center>
+</form>
+{% endblock content%}

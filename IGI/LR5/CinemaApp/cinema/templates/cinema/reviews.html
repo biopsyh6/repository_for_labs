@@ -1,0 +1,17 @@
+{% extends 'cinema/base.html' %}
+{% block header %}Reviews{% endblock %}
+
+{% block content %}
+    {% if is_auth %}
+        <a href="{% url 'add_review' %}">Add Review</a>
+    {% endif %}
+    {% for review in all_reviews %}
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+        <p>Name: {{ review.sender.name }}</p>
+        <p>Surname: {{ review.sender.surname }}</p>
+        <p>Rate: {{ review.rate }}</p>
+        <p>Date: {{ review.date }}</p>
+        <p>Comment: {{ review.text }}</p>
+    </div>
+    {% endfor %}
+{% endblock %}

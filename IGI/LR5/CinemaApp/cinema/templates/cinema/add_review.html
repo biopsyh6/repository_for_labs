@@ -1,0 +1,12 @@
+{% extends 'cinema/base.html' %}
+{% block header %}Add Review{% endblock %}
+{% block content %}
+
+<form method="POST">
+	{% csrf_token %}
+	<center><h2>Enter review</h2>
+	<b>{{ form.as_p }}</b>
+	<button type="submit" >Publish</button>
+</form>
+
+{% endblock content%}

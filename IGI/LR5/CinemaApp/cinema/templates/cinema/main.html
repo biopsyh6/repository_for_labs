@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'cinema/base.html' %}
+{% block header %}Main{% endblock %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{% block content %}
+<body>
+    {% if session %}
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+        <h2>Last published session</h2>
+        <p>Film: {{ session.movie }}</p>
+        <p>Hall: {{ session.hall }}</p>
+        <p>Start time: {{ session.start_time }}</p>
+        <p>End time: {{ session.end_time }}</p>
+    </div>
+    {% else %}
+        <p>Sessions have not yet been published.</p>
+    {% endif %}
+</body>
+{% endblock content %}
+</html>

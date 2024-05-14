@@ -1,0 +1,10 @@
+{% extends 'cinema/base.html' %}
+{% block header %}Cat Facts{% endblock %}
+
+{% block content %}
+    {% for fact in facts %}
+        <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+            <p>Fact: {{ fact }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

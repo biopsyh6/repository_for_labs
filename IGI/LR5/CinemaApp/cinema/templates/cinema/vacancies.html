@@ -1,0 +1,14 @@
+{% extends 'cinema/base.html' %}
+
+{% block header %}Vacancies{% endblock %}
+
+{% block content %}
+    {% for vac in  all_vacancies%}
+            <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+                <h2>{{ vac.name }}</h2>
+                <p>Description: {{ vac.description }}</p>
+                <p>Requirements: {{ vac.requirements }}</p>
+                <p>Salary: {{ vac.salary }}</p>
+            </div>
+    {% endfor %}
+{% endblock %}

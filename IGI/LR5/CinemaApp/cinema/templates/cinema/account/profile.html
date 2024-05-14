@@ -1,0 +1,33 @@
+{% extends 'cinema/base.html' %}
+{% block header %}Profile{% endblock %}
+{% block content %}
+<div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+    <ul>
+        <li>
+            <img src="{{ profile.image.url }}" height="200", width="200">
+        </li>
+        <li>
+            <lable>Name:</lable>
+            <lable>{{ profile.name }}</lable>
+        </li>
+        <li>
+            <lable>Surname:</lable>
+            <lable>{{ profile.surname }}</lable>
+        </li>
+        <li>
+            <lable>Email:</lable>
+            <lable>{{ profile.email }}</lable>
+        </li>
+        <li>
+            <lable>Phone number:</lable>
+            <lable>{{ profile.phone_number }}</lable>
+        </li>
+        <li>
+            <lable>Birth date:</lable>
+            <time datetime="{{ profile.birth_date }}">{{ profile.birth_date }}</time>
+        </li>
+
+    </ul>
+</div>
+
+{% endblock content %}

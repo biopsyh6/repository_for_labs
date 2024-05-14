@@ -1,0 +1,22 @@
+{% extends 'cinema/base.html' %}
+{% block header %}News{% endblock %}
+{% block content %}
+    {% for n in news %}
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+        <h2>{{ n.title }}</h2>
+        <table>
+            <tr>
+                <p>
+                    <img src="{{ n.image.url }}" height="200" width="200">
+                </p>
+                <p>
+                    {{ n.description }}
+                </p>
+                {% comment %} <a href="{{ n.url }}">
+                    <p>Read more</p>
+                </a> {% endcomment %}
+            </tr>
+        </table>
+    </div>
+    {% endfor %}
+{% endblock %}

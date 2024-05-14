@@ -1,0 +1,12 @@
+{% extends 'cinema/base.html' %}
+{% block header %}FAQ{% endblock %}
+
+{% block content %}
+    {% for term in all_terms%}
+        <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+            <p>Question: {{ term.question }}</p>
+            <p>Answer: {{ term.answer }}</p>
+            <p>Date of Publication: {{ term.date }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'cinema/admin/base_admin.html' %}
+
+{% block header %}List of Sessions{% endblock %}
+
+{% block content %}
+        {% for session in sessions %}
+        <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+            <p style="margin-bottom: 2px;">Movie Title: {{ session.movie.title }}</p>
+            <p style="margin-bottom: 2px;">Hall: {{ session.hall.name }}</p>
+            <p style="margin-bottom: 2px;">Start Time: {{ session.start_time }}</p>
+            <p style="margin-bottom: 2px;">End Time: {{ session.end_time }}</p>
+        </div>
+        {% endfor %}
+{% endblock %}

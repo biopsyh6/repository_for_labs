@@ -1,0 +1,17 @@
+{% extends 'cinema/admin/base_admin.html' %}
+
+{% block header %}Edit Ticket{% endblock %}
+
+{% block content %}
+<form method="POST" enctype='multipart/form-data'>
+    {% csrf_token %}
+    <select name="ticket">
+        {% for ticket in tickets %}
+            <option value="{{ ticket.pk }}">{{ ticket.session.movie.title }}</option>
+        {% endfor %}
+    </select>
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'cinema/admin/base_admin.html' %}
+
+{% block header %}List of Movies{% endblock %}
+
+{% block content %}
+        {% for movie in movies %}
+        <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+            <p style="margin-bottom: 2px;">Title: {{ movie.title }}</p>
+            <p style="margin-bottom: 2px;">Country: {{ movie.country }}</p>
+            <p style="margin-bottom: 2px;">Genre: {{ movie.display_genre }}</p>
+            <p style="margin-bottom: 2px;">Duration: {{ movie.duration }}</p>
+            <p style="margin-bottom: 2px;">Budget: {{ movie.budget }}$</p>
+            <p style="margin-bottom: 2px;">Description: {{ movie.description }}</p>
+            <p style="margin-bottom: 4px;">Rating: {{ movie.rating }}</p>
+            <img src="{{ movie.poster.url }}" height="200", width="200">
+        </div>
+        {% endfor %}
+{% endblock %}
