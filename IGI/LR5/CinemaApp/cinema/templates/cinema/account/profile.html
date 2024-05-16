@@ -29,5 +29,9 @@
 
     </ul>
 </div>
-
+{% if request.user.client and not request.user.is_superuser and not request.user.employee %}
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+        <a href="{% url 'index_information_tickets' %}">Information about purchased tickets</a>
+    </div>
+{% endif %}
 {% endblock content %}

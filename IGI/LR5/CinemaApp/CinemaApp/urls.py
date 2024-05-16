@@ -69,7 +69,14 @@ urlpatterns = [
 
 
     #Client
-    re_path(r'^tickets/$', client_views.to_tickets, name='to_tickets'),
+    re_path(r'^movies/$', client_views.index_client_movies, name='index_client_movies'),
+    re_path(r'^tickets/(?P<pk>\d+)/$', client_views.movie_tickets, name='movie_tickets'),
+    re_path(r'^buy_ticket/(?P<pk>\d+)/$', client_views.buy_ticket, name='buy_ticket'),
+    re_path(r'^success_ticket/(?P<pk>\d+)/$', client_views.success_ticket, name='success_ticket'),
+    re_path(r'^information_tickets/$', client_views.index_information_tickets, name='index_information_tickets'),
+
+    # re_path(r'^use_coupon/(?P<pk>\d+)/$', client_views.use_coupon, name='use_coupon'),
+
 
 
     #Admin panel
@@ -89,6 +96,9 @@ urlpatterns = [
     re_path(r'^add_session_admin/$', admin_views.session_new, name='session_new'),
     re_path(r'^edit_session_admin/$', admin_views.session_edit, name='session_edit'),
     re_path(r'^delete_session_admin/$', admin_views.session_delete, name='session_delete'),
+
+    re_path(r'^statistics/$', admin_views.statistics, name='statistics'),
+    re_path(r'^movie_admin_details/(?P<pk>\d+)/$', admin_views.movie_admin_details, name='movie_admin_details'),
 ]
 
 if settings.DEBUG:

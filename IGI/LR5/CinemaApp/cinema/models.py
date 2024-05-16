@@ -179,6 +179,7 @@ class Ticket(models.Model):
     session = models.ForeignKey(Session, on_delete=models.CASCADE, help_text="Enter session for ticket")
     price = models.FloatField(help_text="Enter price")
     employee = models.ForeignKey(Employee, on_delete=models.CASCADE, help_text="Enter the employee who sold the ticket")
+    is_sold = models.BooleanField(default=False)
 
     def __str__(self):
         """
@@ -196,7 +197,7 @@ class TicketSelling(models.Model):
     promo_code = models.CharField(max_length=20, null=True)
 
     def apply_promo(self, promo):
-        if UsedCoupons.objects.filter(user_id=self.client, promo_id=promo).exists():
+        if UsedCoupons.objects.filter(user_id=self.client, coupon__promo=promo.promo).exists():
             return
         self.ticket.price *= 1 - promo.discount/100
         self.promo_code = promo.promo
@@ -316,7 +317,8 @@ class Coupon(models.Model):
     promo = models.CharField(max_length=20, default='')
     discount = models.PositiveSmallIntegerField(validators=[MaxValueValidator(50, message="Discount shouldn't be more 50 %"),
                                                             MinValueValidator(2, message="Discount shouldn't be less than 2 %")])
-    
+    is_available = models.BooleanField(default=True)
+
     def __str__(self):
         return self.name
 

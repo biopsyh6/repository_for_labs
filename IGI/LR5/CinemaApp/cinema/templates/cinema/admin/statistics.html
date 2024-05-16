@@ -1,0 +1,18 @@
+{% extends 'cinema/admin/base_admin.html' %}
+
+{% block header %}Statistics{% endblock %}
+
+{% block content %}
+    <h2>Daily Sales:</h2>
+    {% for sale in daily_sales %}
+        <p>Date: {{ sale.day }} - Total Sales: {{ sale.total_sales|floatformat:2 }}$</p>
+    {% endfor %}
+    <h2>Sales by Session:</h2>
+    {% for sale in session_sales %}
+        <p>Session ID: {{ sale.ticket__session }} - Total Sales: {{ sale.total_sales|floatformat:2 }}$</p>
+    {% endfor %}
+    <h2>Sales by Movie:</h2>
+    {% for sale in movie_sales %}
+        <p>Movie: {{ sale.ticket__session__movie__title }} - Total Sales: {{ sale.total_sales|floatformat:2 }}$</p>
+    {% endfor %}
+{% endblock %}

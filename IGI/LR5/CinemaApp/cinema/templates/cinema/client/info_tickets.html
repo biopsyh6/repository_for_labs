@@ -1,0 +1,22 @@
+{% extends 'cinema/base.html' %}
+
+{% block header %}Information about purchased tickets{% endblock %}
+
+{% block content %}
+    {% if ticket_sellings %}
+        <h2>Purchased Tickets</h2>
+        {% for ticket_selling in ticket_sellings%}
+            <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+                <p style="margin-bottom: 2px;">Movie title: {{ ticket_selling.ticket.session.movie.title }}</p>
+                <p style="margin-bottom: 2px;">Session: {{ ticket_selling.ticket.session.start_time }} - {{ ticket_selling.ticket.session.end_time }}</p>
+                <p style="margin-bottom: 2px;">Price: {{ ticket_selling.ticket.price }}</p>
+                {% if ticket_selling.promo_code %}
+                    <p style="margin-bottom: 2px;">Promo Code Used: {{ ticket_selling.promo_code }}</p>
+                {% endif %}
+                <img src="{{ ticket_selling.ticket.session.movie.poster.url }}" height="200", width="200">
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No tickets have been purchased yet.</p>
+    {% endif %}
+{% endblock %}

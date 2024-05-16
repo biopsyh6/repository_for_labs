@@ -22,7 +22,9 @@
         <a href="{% url 'cats' %}">Cat Facts</a> |
     </div>
     <div>
-            <a href="{% url 'to_tickets' %}">Tickets</a> |
+        {% if request.user.client and not request.user.is_superuser %}
+            <a href="{% url 'index_client_movies' %}">Tickets</a> |
+        {% endif %}
     </div>
     <div>
         {% if request.user.is_superuser %}

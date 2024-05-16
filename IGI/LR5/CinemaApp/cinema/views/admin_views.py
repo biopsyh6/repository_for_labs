@@ -3,6 +3,7 @@ from cinema.forms import MovieForm, TicketForm, SessionForm
 from cinema.models import *
 from django.http import Http404, HttpResponse, HttpResponseRedirect, HttpResponseNotFound
 from django.urls import reverse
+from django.db.models import Sum
 
 
 
@@ -151,6 +152,10 @@ def index_admin_movies(request):
     movies = Movie.objects.all()
     return render(request, "cinema/admin/list_movies_admin.html", {"movies": movies})
 
+def movie_admin_details(request, pk):
+    movie = Movie.objects.get(pk=pk)
+    return render(request, "cinema/admin/details_movie_admin.html", {"movie": movie})
+
 def index_admin_tickets(request):
     """
     Get Ticket objects from database.
@@ -180,3 +185,24 @@ def index_admin_employees(request):
     return render(request, "cinema/admin/list_employees_admin.html", {"employees": employees})
 
 
+def statistics(request):
+    #annotate is for agregation of data
+    #total amount of tickets sold by day
+    daily_sales = TicketSelling.objects.extra(select={'day':'date(date)'}).values('day').annotate(total_sales=Sum('ticket__price'))
+
+    #total amount of ticket sold by session
+    session_sales = TicketSelling.objects.values('ticket__session').annotate(total_sales=Sum('ticket__price'))
+
+    #total amount of ticket sold by movie
+    movie_sales = TicketSelling.objects.values('ticket__session__movie__title').annotate(total_sales=Sum('ticket__price'))
+
+    #alphabetical order
+    movies_alpha = Movie.objects.all().order_by('title')
+
+    #total sales
+    total_sales = TicketSelling.objects.aggregate(total_sales=Sum('ticket__price'))['total_sales']
+
+    #
+
+    return render(request, "cinema/admin/statistics.html", {"daily_sales": daily_sales, "session_sales": session_sales, "movie_sales": movie_sales, 
+                                                            "movies_alpha": movies_alpha, "total_sales": total_sales})

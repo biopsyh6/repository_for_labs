@@ -56,6 +56,7 @@ class VacancyAdmin(admin.ModelAdmin):
 
 admin.site.register(Review)
 admin.site.register(Coupon)
+admin.site.register(UsedCoupons)
 # admin.site.register(Movie)
 admin.site.register(Genre)
 admin.site.register(Hall)
