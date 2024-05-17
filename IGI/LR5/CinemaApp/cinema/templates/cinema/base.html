@@ -19,16 +19,21 @@
         <a href="{% url 'vacancies' %}">Vacancies</a> |
         <a href="{% url 'reviews' %}">Reviews</a> |
         <a href="{% url 'coupons' %}">Coupons</a> |
-        <a href="{% url 'cats' %}">Cat Facts</a> |
+        {% if request.user.client or request.user.is_superuser %}
+            <a href="{% url 'cats' %}">Cat Facts</a> |
+        {% endif %}
     </div>
     <div>
-        {% if request.user.client and not request.user.is_superuser %}
-            <a href="{% url 'index_client_movies' %}">Tickets</a> |
-        {% endif %}
+        <a href="{% url 'index_client_movies' %}">Tickets</a> |
     </div>
     <div>
         {% if request.user.is_superuser %}
             <a href="{% url 'to_admin' %}">Admin</a> |
+        {% endif %}
+    </div>
+    <div>
+        {% if request.user.employee %}
+            <a href="{% url 'info_sales' %}">Sales</a> |
         {% endif %}
     </div>
 

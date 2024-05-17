@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
-from cinema.views import views, api_views, admin_views, client_views
+from cinema.views import views, api_views, admin_views, client_views, employee_views
 from django.views.generic.base import TemplateView
 from cinema.views.views import *
 
@@ -50,6 +50,7 @@ urlpatterns = [
     re_path(r'^accounts/login/$', account_views.login, name='login'),
     re_path(r'^accounts/logout/$', account_views.logout, name='logout'),
     re_path(r'^accounts/profile/$', account_views.profile, name='profile'),
+    re_path(r'^accounts/edit_profile/$', account_views.edit_profile, name='edit_profile'),
     re_path(r'^main/$', views.index_last_session, name='main'),
     re_path(r'^about/$', views.about_company, name='about'),
 
@@ -67,6 +68,9 @@ urlpatterns = [
 
     path('', pages.home, name='home'),
 
+
+    #Employee
+    re_path(r'^sales_information/$', employee_views.info_sales, name='info_sales'),
 
     #Client
     re_path(r'^movies/$', client_views.index_client_movies, name='index_client_movies'),

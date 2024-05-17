@@ -1,0 +1,24 @@
+{% extends 'cinema/base.html' %}
+
+{% block header %}Sales information{% endblock %}
+
+
+{% block content %}
+    {% if sales %}
+        <h2>Sales</h2>
+        {% for sale in sales %}
+            <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+                <p style="margin-bottom: 2px;">Client: {{ sale.client.name }}, {{ sale.client.surname }}</p>
+                <p style="margin-bottom: 2px;">Movie: {{ sale.ticket.session.movie.title }}</p>
+                <p style="margin-bottom: 2px;">Session: {{ sale.ticket.session.start_time }}</p>
+                <p style="margin-bottom: 2px;">Price: {{ sale.ticket.price }}$</p>
+                <p style="margin-bottom: 2px;">Date of Sale: {{ sale.date }}</p>
+                {% if sale.promo_code %}
+                    <p style="margin-bottom: 2px;">Promo Code: {{ sale.promo_code }}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No sales information available.</p>
+    {% endif %}
+{% endblock %}

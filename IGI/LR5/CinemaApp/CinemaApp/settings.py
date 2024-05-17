@@ -14,11 +14,62 @@ from pathlib import Path
 import os
 
 from tzlocal import get_localzone_name
-
+from logging import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {
+            "format": "{levelname} {asctime} {module} {process:d} {thread:d} {message}",
+            "style": "{",
+        },
+        "simple": {
+            "format": "{levelname} {message}",
+            "style": "{",
+        },
+        'db_formatter': {
+            "format": "{asctime} {message}",
+            "style": "{",
+        }
+    },
+    "handlers": {
+        "console": {
+            "level": "DEBUG",
+            "class": "logging.StreamHandler",
+            "formatter": "verbose",
+        },
+        "file": {
+            "level": "DEBUG",
+            "class": "logging.FileHandler",
+            "filename": os.path.join(BASE_DIR, 'debug.log'),
+            "formatter": "verbose", 
+        },
+        'db_logger_file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            "filename": os.path.join(BASE_DIR, 'db.log'),
+            'formatter': 'db_formatter',
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["file"],
+            "level": "DEBUG",
+            "propagate": True,
+        },
+        'db_logger': {
+            'handlers': ['db_logger_file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    
+    },
+}
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -120,7 +171,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = get_localzone_name()
 
 USE_I18N = True
 

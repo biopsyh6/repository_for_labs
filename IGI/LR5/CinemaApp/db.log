@@ -1,0 +1,190 @@
+2024-05-16 23:15:56,522 Get last session successfully
+2024-05-16 23:18:56,166 Get last session successfully
+2024-05-16 23:33:46,994 Get last session successfully
+2024-05-16 23:34:38,219 Get all sales successfully
+2024-05-16 23:54:16,740 Get last session successfully
+2024-05-16 23:54:21,237 Get the questions and answers
+2024-05-16 23:54:22,401 Get contacts
+2024-05-16 23:54:24,744 Get vacancies
+2024-05-16 23:55:22,927 Get coupons and used_coupons successfully
+2024-05-16 23:55:24,568 Get response by cats API successfully
+2024-05-16 23:55:30,663 Get all sales successfully
+2024-05-16 23:55:33,434 Logout successfully
+2024-05-16 23:55:48,311 LoginForm is valid
+2024-05-16 23:55:48,638 Login user success
+2024-05-17 00:14:12,822 Logout successfully
+2024-05-17 00:14:19,386 LoginForm is valid
+2024-05-17 00:14:19,709 Login user success
+2024-05-17 03:06:06,834 Logout successfully
+2024-05-17 03:06:11,448 LoginForm is valid
+2024-05-17 03:06:11,845 Login user success
+2024-05-17 03:06:14,307 MovieFilterForm is valid
+2024-05-17 03:06:22,424 TicketFilterForm is valid
+2024-05-17 03:57:16,506 Get Ticket objects successfully
+2024-05-17 03:57:33,948 Get Ticket objects successfully
+2024-05-17 03:57:58,478 Get Session objects successfully
+2024-05-17 03:57:58,499 Get Ticket objects successfully
+2024-05-17 03:58:31,292 Get Employee objects successfully
+2024-05-17 03:58:31,313 Get Hall objects successfully
+2024-05-17 03:58:31,321 Get Session objects successfully
+2024-05-17 03:58:31,325 Get Ticket objects successfully
+2024-05-17 04:00:37,430 Get Employee objects successfully
+2024-05-17 04:00:37,436 Get Hall objects successfully
+2024-05-17 04:00:37,439 Get Session objects successfully
+2024-05-17 04:00:37,443 Get Ticket objects successfully
+2024-05-17 04:00:37,451 Get all sales successfully
+2024-05-17 04:04:48,817 Get Employee objects successfully
+2024-05-17 04:04:48,825 Get Hall objects successfully
+2024-05-17 04:04:48,828 Get Session objects successfully
+2024-05-17 04:04:48,831 Get Ticket objects successfully
+2024-05-17 04:04:48,839 Get all sales successfully
+2024-05-17 04:05:43,359 Get Employee objects successfully
+2024-05-17 04:05:43,367 Get Hall objects successfully
+2024-05-17 04:05:43,369 Get Session objects successfully
+2024-05-17 04:05:43,372 Get Ticket objects successfully
+2024-05-17 04:05:43,380 Get all sales successfully
+2024-05-17 04:05:56,436 Get Employee objects successfully
+2024-05-17 04:05:56,443 Get Hall objects successfully
+2024-05-17 04:05:56,444 Get Session objects successfully
+2024-05-17 04:05:56,447 Get Ticket objects successfully
+2024-05-17 04:05:56,454 Get all sales successfully
+2024-05-17 04:09:27,478 Get Employee objects successfully
+2024-05-17 04:09:27,485 Get Hall objects successfully
+2024-05-17 04:09:27,488 Get Session objects successfully
+2024-05-17 04:09:27,491 Get Ticket objects successfully
+2024-05-17 04:09:27,498 Get all sales successfully
+2024-05-17 04:09:35,854 Get Employee objects successfully
+2024-05-17 04:09:35,865 Get Hall objects successfully
+2024-05-17 04:09:35,867 Get Session objects successfully
+2024-05-17 04:09:35,872 Get Ticket objects successfully
+2024-05-17 04:09:35,879 Get all sales successfully
+2024-05-17 04:13:03,261 Get Employee objects successfully
+2024-05-17 04:13:03,268 Get Hall objects successfully
+2024-05-17 04:13:03,270 Get Session objects successfully
+2024-05-17 04:13:03,273 Get Ticket objects successfully
+2024-05-17 04:13:03,281 Get all sales successfully
+2024-05-17 04:13:03,287 Get TicketSelling objects by pk successfully
+2024-05-17 04:14:04,804 Get Employee objects successfully
+2024-05-17 04:14:04,810 Get Hall objects successfully
+2024-05-17 04:14:04,812 Get Session objects successfully
+2024-05-17 04:14:04,815 Get Ticket objects successfully
+2024-05-17 04:14:04,823 Get all sales successfully
+2024-05-17 04:14:04,831 Get TicketSelling objects by pk successfully
+2024-05-17 04:15:13,437 Get Employee objects successfully
+2024-05-17 04:15:13,444 Get Hall objects successfully
+2024-05-17 04:15:13,446 Get Session objects successfully
+2024-05-17 04:15:13,450 Get Ticket objects successfully
+2024-05-17 04:15:13,458 Get all sales successfully
+2024-05-17 04:15:13,467 Get TicketSelling objects by pk successfully
+2024-05-17 04:15:47,496 Get Employee objects successfully
+2024-05-17 04:15:47,502 Get Hall objects successfully
+2024-05-17 04:15:47,504 Get Session objects successfully
+2024-05-17 04:15:47,508 Get Ticket objects successfully
+2024-05-17 04:15:47,522 Get all sales successfully
+2024-05-17 04:15:47,531 Get TicketSelling objects by pk successfully
+2024-05-17 04:16:07,626 Logout successfully
+2024-05-17 04:16:13,873 LoginForm is valid
+2024-05-17 04:16:14,209 Login user success
+2024-05-17 04:17:00,321 Get Employee objects successfully
+2024-05-17 04:17:00,329 Get Hall objects successfully
+2024-05-17 04:17:00,331 Get Session objects successfully
+2024-05-17 04:17:00,334 Get Ticket objects successfully
+2024-05-17 04:17:00,342 Get all sales successfully
+2024-05-17 04:17:00,350 Get TicketSelling objects by pk successfully
+2024-05-17 04:20:23,134 Get Employee objects successfully
+2024-05-17 04:20:23,140 Get Hall objects successfully
+2024-05-17 04:20:23,142 Get Session objects successfully
+2024-05-17 04:20:23,145 Get Ticket objects successfully
+2024-05-17 04:20:23,155 Get all sales successfully
+2024-05-17 04:20:23,162 Get TicketSelling objects by pk successfully
+2024-05-17 04:20:35,611 Get Employee objects successfully
+2024-05-17 04:20:35,618 Get Hall objects successfully
+2024-05-17 04:20:35,620 Get Session objects successfully
+2024-05-17 04:20:35,624 Get Ticket objects successfully
+2024-05-17 04:20:35,632 Get all sales successfully
+2024-05-17 04:20:35,641 Get TicketSelling objects by pk successfully
+2024-05-17 04:25:40,972 Get Employee objects successfully
+2024-05-17 04:25:40,980 Get Hall objects successfully
+2024-05-17 04:25:40,982 Get Session objects successfully
+2024-05-17 04:25:40,986 Get Ticket objects successfully
+2024-05-17 04:25:40,994 Get all sales successfully
+2024-05-17 04:25:41,002 Get TicketSelling objects by pk successfully
+2024-05-17 04:26:00,479 Get Employee objects successfully
+2024-05-17 04:26:00,485 Get Hall objects successfully
+2024-05-17 04:26:00,488 Get Session objects successfully
+2024-05-17 04:26:00,492 Get Ticket objects successfully
+2024-05-17 04:26:00,499 Get all sales successfully
+2024-05-17 04:26:00,507 Get TicketSelling objects by pk successfully
+2024-05-17 04:26:24,430 Get Employee objects successfully
+2024-05-17 04:26:24,436 Get Hall objects successfully
+2024-05-17 04:26:24,439 Get Movie objects successfully
+2024-05-17 04:26:24,446 Get Session objects successfully
+2024-05-17 04:26:24,451 Get Ticket objects successfully
+2024-05-17 04:26:24,458 Get all sales successfully
+2024-05-17 04:26:24,466 Get TicketSelling objects by pk successfully
+2024-05-17 04:26:50,606 Get Employee objects successfully
+2024-05-17 04:26:50,612 Get Hall objects successfully
+2024-05-17 04:26:50,614 Get Movie objects successfully
+2024-05-17 04:26:50,617 Get Session objects successfully
+2024-05-17 04:26:50,619 Get Ticket objects successfully
+2024-05-17 04:26:50,627 Get all sales successfully
+2024-05-17 04:26:50,637 Get TicketSelling objects by pk successfully
+2024-05-17 04:26:56,023 Get Employee objects successfully
+2024-05-17 04:26:56,030 Get Hall objects successfully
+2024-05-17 04:26:56,032 Get Movie objects successfully
+2024-05-17 04:26:56,035 Get Session objects successfully
+2024-05-17 04:26:56,038 Get Ticket objects successfully
+2024-05-17 04:26:56,046 Get all sales successfully
+2024-05-17 04:26:56,052 Get Movie object by pk
+2024-05-17 04:26:56,071 Get TicketSelling objects by pk successfully
+2024-05-17 04:28:23,856 Get Employee objects successfully
+2024-05-17 04:28:23,861 Get Hall objects successfully
+2024-05-17 04:28:23,863 Get Movie objects successfully
+2024-05-17 04:28:23,865 Get Session objects successfully
+2024-05-17 04:28:23,870 Get Ticket objects successfully
+2024-05-17 04:28:23,878 Get all sales successfully
+2024-05-17 04:28:23,885 Get Movie object by pk
+2024-05-17 04:28:23,889 Get TicketSelling objects by pk successfully
+2024-05-17 04:31:28,482 Get Employee objects successfully
+2024-05-17 04:31:28,488 Get Hall objects successfully
+2024-05-17 04:31:28,490 Get Movie objects successfully
+2024-05-17 04:31:28,492 Get Session objects successfully
+2024-05-17 04:31:28,496 Get Ticket objects successfully
+2024-05-17 04:31:28,504 Get all sales successfully
+2024-05-17 04:31:28,511 Get Movie object by pk
+2024-05-17 04:31:28,534 Get TicketSelling objects by pk successfully
+2024-05-17 04:31:56,834 Get Employee objects successfully
+2024-05-17 04:31:56,841 Get Hall objects successfully
+2024-05-17 04:31:56,843 Get Movie objects successfully
+2024-05-17 04:31:56,846 Get Session objects successfully
+2024-05-17 04:31:56,850 Get Ticket objects successfully
+2024-05-17 04:31:56,858 Get all sales successfully
+2024-05-17 04:31:56,864 Get Movie object by pk
+2024-05-17 04:31:56,877 Get TicketSelling objects by pk successfully
+2024-05-17 04:32:15,413 Get Employee objects successfully
+2024-05-17 04:32:15,420 Get Hall objects successfully
+2024-05-17 04:32:15,422 Get Movie objects successfully
+2024-05-17 04:32:15,424 Get Session objects successfully
+2024-05-17 04:32:15,428 Get Ticket objects successfully
+2024-05-17 04:32:15,436 Get all sales successfully
+2024-05-17 04:32:15,443 Get Movie object by pk
+2024-05-17 04:32:15,454 Session create successfully
+2024-05-17 04:32:15,457 Get TicketSelling objects by pk successfully
+2024-05-17 04:33:17,740 Get Employee objects successfully
+2024-05-17 04:33:17,748 Get Hall objects successfully
+2024-05-17 04:33:17,750 Get Movie objects successfully
+2024-05-17 04:33:17,752 Get Session objects successfully
+2024-05-17 04:33:17,752 Get Ticket objects successfully
+2024-05-17 04:33:17,763 Get all sales successfully
+2024-05-17 04:33:17,771 Get Movie object by pk
+2024-05-17 04:33:17,774 Get Movie object by pk
+2024-05-17 04:33:17,777 Get Movie object by pk
+2024-05-17 04:33:17,788 Session create successfully
+2024-05-17 04:33:17,792 Session create successfully
+2024-05-17 04:33:17,793 Get TicketSelling objects by pk successfully
+2024-05-17 04:33:17,798 Get TicketSelling objects by pk successfully
+2024-05-17 04:33:17,804 Get TicketSelling objects by pk successfully
+2024-05-17 05:44:51,706 Logout successfully
+2024-05-17 05:44:57,089 LoginForm is valid
+2024-05-17 05:44:57,434 Login user success
+2024-05-17 05:56:58,030 Logout successfully

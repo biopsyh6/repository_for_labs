@@ -3,6 +3,9 @@ import requests
 import tmdbsimple as tmdb
 from django.shortcuts import render
 import random
+import logging
+
+logger = logging.getLogger('db_logger')
 
 tmdb.API_KEY = '25beca1b44784cf99bb97d69d991690f'
 # tmdb.REQUESTS_TIMEOUT = 1
@@ -20,6 +23,7 @@ def update_news():
     }
     response = requests.get(url, headers=headers)
     response = response.json()
+    logger.info("Get response by Film API successfully")
     films = response['results']
     for film in films:
         try:
@@ -40,6 +44,7 @@ def update_news():
 def news(request):
     update_news()
     news_data = News.objects.all()
+    logger.info("Get News objects successfully")
     data = {'news': reversed(news_data)}
     return render(request, 'cinema/news.html', context=data)
 
@@ -48,14 +53,11 @@ def cats(request):
     page = random.randint(1, 34)
     response = requests.get(f'https://catfact.ninja/facts?page={page}')
     response = response.json()
+    logger.info("Get response by cats API successfully")
     data = response['data']
     facts = list()
     for i in range(len(data)):
         facts.append(data[i]["fact"])
     return render(request, 'cinema/cat_facts.html', {"facts": facts})
 
-
-
-# database = tmdb()
-# movies = database.movies().top_rated()
 

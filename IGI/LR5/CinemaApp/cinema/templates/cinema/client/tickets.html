@@ -3,6 +3,10 @@
 {% block header %}Tickets for {{ movie.title }}{% endblock %}
 
 {% block content %}
+    <form method="GET">
+        {{ form.as_p }}
+        <button type="submit" style="margin-bottom: 6px; margin-top: 10px;">Filter</button>
+    </form>
     {% if tickets %}
         <h2>Available Tickets:</h2>
         {% for ticket in tickets %}

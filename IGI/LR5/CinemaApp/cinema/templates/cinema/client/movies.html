@@ -3,6 +3,10 @@
 {% block header %}List of Movies{% endblock %}
 
 {% block content %}
+    <form method="GET">
+        {{ form.as_p }}
+        <button type="submit" style="margin-bottom: 6px; margin-top: 6px;">Filter</button>
+    </form>
         {% for movie in movies %}
         <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
             <p style="margin-bottom: 2px;">Title: {{ movie.title }}</p>
@@ -14,9 +18,11 @@
             <p style="margin-bottom: 4px;">Rating: {{ movie.rating }}</p>
             <img src="{{ movie.poster.url }}" height="200", width="200">
             {% comment %} <a style="margin-bottom: 6px;" href="{% url 'movie_tickets' pk=movie.pk %}">View Tickets</a> {% endcomment %}
-            <form action="{% url 'movie_tickets' pk=movie.pk %}" method="get" style="margin-bottom: 6px; margin-top: 10px;">
-                <button type="submit">View Tickets</button>
-            </form>
+            {% if request.user.client and not request.user.is_superuser and not request.user.employee %}
+                <form action="{% url 'movie_tickets' pk=movie.pk %}" method="get" style="margin-bottom: 6px; margin-top: 10px;">
+                    <button type="submit">View Tickets</button>
+                </form>
+            {% endif %}
         </div>
         {% endfor %}
 {% endblock %}

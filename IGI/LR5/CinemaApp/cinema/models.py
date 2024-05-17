@@ -12,10 +12,11 @@ from tzlocal import get_localzone_name
 from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator, RegexValidator
 import datetime
+from datetime import date
 import requests
 from tempfile import NamedTemporaryFile
 
-logger = logging.getLogger(__name__)
+
 
 
 # class CustomUser(AbstractUser):
@@ -57,6 +58,8 @@ class Client(models.Model):
 
     def __str__(self):
         return f"{self.surname} {self.name} {self.email}"
+    
+
 
 class Genre(models.Model):
     """
@@ -124,18 +127,6 @@ class Session(models.Model):
         """
         return self.movie.title
 
-
-# class TicketPrice(models.Model):
-#     """
-#     Model representing a ticket price
-#     """
-#     price = models.FloatField(help_text="Enter price")
-
-#     def __str__(self):
-#         """
-#         String for representing the TicketPrice object.
-#         """
-#         return str(self.price)
     
 
 class Employee(models.Model):

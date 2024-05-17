@@ -4,7 +4,7 @@
 <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
     <ul>
         <li>
-            <img src="{{ profile.image.url }}" height="200", width="200">
+            <img src="{{ profile.image.url }}" height="200">
         </li>
         <li>
             <lable>Name:</lable>
@@ -28,6 +28,9 @@
         </li>
 
     </ul>
+    {% if request.user.client or request.user.employee %}
+        <a href="{% url 'edit_profile' %}">Edit Profile</a>
+    {% endif %}
 </div>
 {% if request.user.client and not request.user.is_superuser and not request.user.employee %}
     <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
