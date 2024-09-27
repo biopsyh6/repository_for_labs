@@ -1,0 +1,925 @@
+INFO 2024-09-28 02:13:18,545 autoreload 22896 25224 Watching for file changes with StatReloader
+DEBUG 2024-09-28 02:13:18,546 autoreload 22896 25224 Waiting for apps ready_event.
+DEBUG 2024-09-28 02:13:18,587 autoreload 22896 25224 Apps ready_event triggered. Sending autoreload_started signal.
+DEBUG 2024-09-28 02:13:18,618 autoreload 22896 25224 Watching dir C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates with glob **/*.
+DEBUG 2024-09-28 02:13:18,619 autoreload 22896 25224 Watching dir C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\templates with glob **/*.
+DEBUG 2024-09-28 02:13:18,619 autoreload 22896 25224 Watching dir C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\locale with glob **/*.mo.
+DEBUG 2024-09-28 02:13:18,619 autoreload 22896 25224 Watching dir C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\locale with glob **/*.mo.
+DEBUG 2024-09-28 02:13:18,762 utils 22896 13536 (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2024-09-28 02:13:18,765 utils 22896 13536 (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 02:13:18,807 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\generator.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,807 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\finders.py first seen with mtime 1714332963.495951
+DEBUG 2024-09-28 02:13:18,807 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\_encoded_words.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,807 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\discover.py first seen with mtime 1715454303.5218923
+DEBUG 2024-09-28 02:13:18,807 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\changes.py first seen with mtime 1715454303.5218923
+DEBUG 2024-09-28 02:13:18,807 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py first seen with mtime 1715450765.838979
+DEBUG 2024-09-28 02:13:18,807 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\movies.py first seen with mtime 1715454303.525027
+DEBUG 2024-09-28 02:13:18,807 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\typing.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\__init__.py first seen with mtime 1714332963.640677
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\indexes.py first seen with mtime 1714332963.6642005
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\search.py first seen with mtime 1715454303.525027
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\inspect.py first seen with mtime 1714332963.8545794
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\management\commands\runserver.py first seen with mtime 1714332963.5754783
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\subprocess.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\management\commands\__init__.py first seen with mtime 1714332963.5042531
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\operator.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tzlocal\windows_tz.py first seen with mtime 1715024570.5373106
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py first seen with mtime 1714332963.6345472
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\version.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\i18n.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,808 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_compiler.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\__init__.py first seen with mtime 1714332963.1911569
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\encoding.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\termcolors.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\dis.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\asgi.py first seen with mtime 1714332963.5473256
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\wsgiref\simple_server.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\__init__.py first seen with mtime 1715450766.3396735
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\deletion.py first seen with mtime 1714332963.6574602
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\csrf.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_version.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\http\cookiejar.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,809 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\handler.py first seen with mtime 1714332963.5431345
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_casefix.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\wait.py first seen with mtime 1715450765.841786
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\forms.py first seen with mtime 1714332961.5045474
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\graph_objs\__init__.py first seen with mtime 1715851268.2031832
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\base.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\asyncio.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\cache.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\calendar.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\datastructures.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\database.py first seen with mtime 1714332963.5267057
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\operations\models.py first seen with mtime 1714332963.6504457
+DEBUG 2024-09-28 02:13:18,810 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\apps\__init__.py first seen with mtime 1714332960.0270119
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py first seen with mtime 1714332963.5502827
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\proxy.py first seen with mtime 1715450765.8368478
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\messages.py first seen with mtime 1714332963.5267057
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\creation.py first seen with mtime 1714332963.5992596
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\utils.py first seen with mtime 1714332963.6504457
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\_functions.py first seen with mtime 1714332963.6345472
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\list.py first seen with mtime 1714332963.886293
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\compat.py first seen with mtime 1715450766.5743804
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\checks.py first seen with mtime 1714332963.495951
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\uploadedfile.py first seen with mtime 1714332963.5386126
+DEBUG 2024-09-28 02:13:18,811 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\errors.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\decimal.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\conf\urls\__init__.py first seen with mtime 1714332960.40679
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\uploadhandler.py first seen with mtime 1714332963.5386126
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\heapq.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\memory.py first seen with mtime 1714332963.5431345
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\operations.py first seen with mtime 1714332963.639545
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\threads.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\async_checks.py first seen with mtime 1714332963.5253534
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\cached.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\difflib.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\utils.py first seen with mtime 1714332963.671579
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\engine\statement_splitter.py first seen with mtime 1714332959.3020508
+DEBUG 2024-09-28 02:13:18,812 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tzlocal\win32.py first seen with mtime 1715024570.5362833
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\types.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\__init__.py first seen with mtime 1714332963.6729379
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\_markupbase.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\utils.py first seen with mtime 1714332963.5431345
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\security\base.py first seen with mtime 1714332963.5301936
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\expressions.py first seen with mtime 1714332963.6642005
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\related_lookups.py first seen with mtime 1714332963.6810386
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\math.py first seen with mtime 1714332963.6861372
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\http.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\reindent.py first seen with mtime 1714332959.3080175
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\cache.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\string.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,813 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\datetime.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\base.py first seen with mtime 1714332963.5827343
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\html\entities.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\text.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\management\__init__.py first seen with mtime 1714332963.5042531
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\hmac.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\wsgi.py first seen with mtime 1714332963.5158381
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\checks.py first seen with mtime 1714332961.5045474
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\mixins.py first seen with mtime 1714332963.6768372
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\temp.py first seen with mtime 1714332963.5386126
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\library.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\state.py first seen with mtime 1714332963.6504457
+DEBUG 2024-09-28 02:13:18,814 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\hooks.py first seen with mtime 1715450766.5767102
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\middleware.py first seen with mtime 1714332963.0027292
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\zoneinfo\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\deprecation.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\request.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_constants.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssltransport.py first seen with mtime 1715450765.8402684
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\__init__.py first seen with mtime 1714332961.498928
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\utils.py first seen with mtime 1714332959.2980373
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_utils.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\__init__.py first seen with mtime 1714332960.40679
+DEBUG 2024-09-28 02:13:18,815 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\md__mypyc.cp312-win_amd64.pyd first seen with mtime 1715450766.3396735
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\translation\reloader.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\__init__.py first seen with mtime 1714332960.40679
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\__init__.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\logging\config.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\management\__init__.py first seen with mtime 1714332961.4865155
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\urllib\response.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\management\base.py first seen with mtime 1714332963.5603168
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\app_directories.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\security\sessions.py first seen with mtime 1714332963.53647
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\__init__.py first seen with mtime 1714332963.53647
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\mixins.py first seen with mtime 1714332963.5473256
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\tempfile.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,816 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\token.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\enum.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\graphlib.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\apps.py first seen with mtime 1714332963.495951
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\mime\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\response.py first seen with mtime 1715450765.8382182
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\files.py first seen with mtime 1714332963.5267057
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\schema.py first seen with mtime 1714332963.6041048
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\__init__.py first seen with mtime 1714332963.5158381
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\backends\__init__.py first seen with mtime 1714332963.5158381
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\mixins.py first seen with mtime 1714332963.6861372
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,817 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\__init__.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\exceptions.py first seen with mtime 1714332959.2894287
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\__init__.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_ctypes.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\creation.py first seen with mtime 1714332963.6345472
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\utils.py first seen with mtime 1714332963.7022314
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\tokenize.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\sslproto.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\related_descriptors.py first seen with mtime 1714332963.679869
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\filters.py first seen with mtime 1714332960.4184134
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\traceback.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\static.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templatetags\__init__.py first seen with mtime 1727478737.3535366
+DEBUG 2024-09-28 02:13:18,818 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\constants.py first seen with mtime 1714332963.6904442
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\reduction.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\views.py first seen with mtime 1714332961.5045474
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\exceptions.py first seen with mtime 1714332963.6433759
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\shortcuts.py first seen with mtime 1714332963.207015
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\base.py first seen with mtime 1714332963.8233309
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\base.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\status_codes.py first seen with mtime 1715450766.5767102
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\shutil.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\base.py first seen with mtime 1714332960.9878943
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\html\parser.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\exceptions.py first seen with mtime 1715450766.5754817
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\views\views.py first seen with mtime 1727478737.3605363
+DEBUG 2024-09-28 02:13:18,819 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\ssl.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\collections\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\sysconfig.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\compatibility\__init__.py first seen with mtime 1714332963.5301936
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_asyncio.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\feedparser.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\ipaddress.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\widgets.py first seen with mtime 1714332960.4184134
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\__init__.py first seen with mtime 1714332963.5473256
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\widgets.py first seen with mtime 1714332963.7022314
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\__init__.py first seen with mtime 1714332963.8233309
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py first seen with mtime 1715450766.5730891
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\operations.py first seen with mtime 1714332963.60279
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\sql.py first seen with mtime 1714332959.2980373
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\context.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,820 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\taskgroups.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,821 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\__init__.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,821 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\asgiref\sync.py first seen with mtime 1714332959.8350136
+DEBUG 2024-09-28 02:13:18,821 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py first seen with mtime 1714332961.2828434
+DEBUG 2024-09-28 02:13:18,821 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\tokens.py first seen with mtime 1714332961.2828434
+DEBUG 2024-09-28 02:13:18,821 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\auth.py first seen with mtime 1715450766.5730891
+DEBUG 2024-09-28 02:13:18,821 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\management\__init__.py first seen with mtime 1714332963.5590377
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\collections\abc.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\autoreload.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\views.py first seen with mtime 1714332963.5030127
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextvars.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\handlers.py first seen with mtime 1714332963.495951
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\transports.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\servers\__init__.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\idnadata.py first seen with mtime 1715450766.1801012
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\__init__.py first seen with mtime 1714332963.682598
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\regex_helper.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,822 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\images.py first seen with mtime 1714332963.5386126
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\select.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\linecache.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\datastructures.py first seen with mtime 1714332963.6917875
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\readers.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\configuration.py first seen with mtime 1715454303.5218923
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\introspection.py first seen with mtime 1714332963.6380696
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\conf\global_settings.py first seen with mtime 1714332960.043109
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py first seen with mtime 1715450766.5767102
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\multipartparser.py first seen with mtime 1714332963.7765186
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\random.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\poolmanager.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\forms.py first seen with mtime 1714332961.2670403
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\utils.py first seen with mtime 1715450766.5789149
+DEBUG 2024-09-28 02:13:18,823 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\management\commands\__init__.py first seen with mtime 1714332963.564192
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\constant.py first seen with mtime 1715450766.3396735
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\translation.py first seen with mtime 1714332963.5301936
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\cli.py first seen with mtime 1714332959.2894287
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\__init__.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\management\color.py first seen with mtime 1714332963.5603168
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\textwrap.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_socket.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\crypto.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_wmi.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_overlapped.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\proxy.py first seen with mtime 1714332963.6768372
+DEBUG 2024-09-28 02:13:18,824 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssl_match_hostname.py first seen with mtime 1715450765.8402684
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\python.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\fields.py first seen with mtime 1714332963.6998055
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\exceptions.py first seen with mtime 1714332963.8233309
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\certs.py first seen with mtime 1715450766.5730891
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\views\__init__.py first seen with mtime 1714332960.9878943
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\options.py first seen with mtime 1714332963.6670206
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\cookies.py first seen with mtime 1715450766.5743804
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_base_connection.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\http\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\signals.py first seen with mtime 1714332963.670492
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\readers.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\bz2.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,825 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\socketserver.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\_parseaddr.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\__init__.py first seen with mtime 1715450766.5705948
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\generated.py first seen with mtime 1714332963.6744852
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_ssl.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\features.py first seen with mtime 1714332963.5992596
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\zipfile\_path\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\encoders.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\__init__.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\connection.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\_header_value_parser.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\admin.py first seen with mtime 1714332961.498928
+DEBUG 2024-09-28 02:13:18,826 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_queue.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\_plotly_utils\__init__.py first seen with mtime 1715851268.0453055
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\conf\__init__.py first seen with mtime 1714332960.043109
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\timesince.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\nturl2path.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\resolvers.py first seen with mtime 1714332963.8233309
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\fnmatch.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\signing.py first seen with mtime 1714332963.5145917
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\legacy.py first seen with mtime 1715450766.3396735
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\http\cookies.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\encodings\aliases.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\copyreg.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,827 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\mail\message.py first seen with mtime 1714332963.5525403
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\wsgiref\headers.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\manage.py first seen with mtime 1727478737.378536
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\exceptions.py first seen with mtime 1714332963.0027292
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\formatter.py first seen with mtime 1714332959.2894287
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\formats.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\encodings\idna.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\signals.py first seen with mtime 1714332963.5134506
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\functools.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_8.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\queue.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py first seen with mtime 1715450766.5705948
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query_utils.py first seen with mtime 1714332963.6694262
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\html\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,828 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\message.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\enums.py first seen with mtime 1714332963.6626763
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\__init__.py first seen with mtime 1714332963.6959474
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\concurrent\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\exceptions.py first seen with mtime 1714332960.4164033
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\sites.py first seen with mtime 1714332960.4184134
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\mime\message.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\filesystem.py first seen with mtime 1714332963.5431345
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\logging\handlers.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\__future__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\__init__.py first seen with mtime 1714332960.9817393
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\related.py first seen with mtime 1714332963.679869
+DEBUG 2024-09-28 02:13:18,829 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\registry.py first seen with mtime 1714332963.5301936
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\base_session.py first seen with mtime 1714332963.0027292
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\actions.py first seen with mtime 1714332960.40679
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\constants.py first seen with mtime 1714332962.6293252
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\schema.py first seen with mtime 1714332963.639545
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_futures.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\staggered.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\backends.py first seen with mtime 1714332961.2670403
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\transaction.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\dateformat.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\genres.py first seen with mtime 1715454303.5239918
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\__init__.py first seen with mtime 1714332963.5102499
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\servers\basehttp.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,830 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\conf.py first seen with mtime 1714332963.8233309
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tzlocal\__init__.py first seen with mtime 1715024570.5341065
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\argparse.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\defaults.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_legacy.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\urllib\parse.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\comparison.py first seen with mtime 1714332963.683748
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\__init__.py first seen with mtime 1714332960.0270119
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\datetime.py first seen with mtime 1714332963.6848602
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\numberformat.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\views\autocomplete.py first seen with mtime 1714332960.9878943
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\package_data.py first seen with mtime 1715450766.1801012
+DEBUG 2024-09-28 02:13:18,831 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\api.py first seen with mtime 1714332962.6293252
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\apps\config.py first seen with mtime 1714332960.0270119
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\templates.py first seen with mtime 1714332963.5301936
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\struct.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\boundfield.py first seen with mtime 1714332963.698332
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\ctypes\_endian.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\dates.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\lzma.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\CinemaApp\urls.py first seen with mtime 1727478737.3000135
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\mixins.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\__init__.py first seen with mtime 1714332963.5232062
+DEBUG 2024-09-28 02:13:18,832 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\cd.py first seen with mtime 1715450766.3396735
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\i18n.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\where.py first seen with mtime 1714332963.6928687
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\__init__.py first seen with mtime 1714332963.7765186
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\trsock.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\__init__.py first seen with mtime 1714332963.6891239
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\gzip.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\wsgiref\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\__init__.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\forms.py first seen with mtime 1714332963.6998055
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\translation\trans_real.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\__init__.py first seen with mtime 1714332963.6299424
+DEBUG 2024-09-28 02:13:18,833 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\version.py first seen with mtime 1715450766.3396735
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\__init__.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\threading.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\asgiref\__init__.py first seen with mtime 1714332959.8350136
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\selectors.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\sqlite3\dbapi2.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\header.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\__init__.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\coroutines.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\request.py first seen with mtime 1715450765.837639
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\security\__init__.py first seen with mtime 1714332963.5301936
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\__init__.py first seen with mtime 1714332963.0027292
+DEBUG 2024-09-28 02:13:18,834 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\debug.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\apps.py first seen with mtime 1714332961.2670403
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\socket.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\CinemaApp\__init__.py first seen with mtime 1727478737.2970958
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\keywords.py first seen with mtime 1714332959.2894287
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\views\employee_views.py first seen with mtime 1727478737.3595366
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\platform.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\signal.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\output.py first seen with mtime 1714332959.3020508
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\__init__.py first seen with mtime 1714332963.6504457
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\lookups.py first seen with mtime 1714332963.6642005
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\response.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\utils.py first seen with mtime 1715450766.3396735
+DEBUG 2024-09-28 02:13:18,835 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\features.py first seen with mtime 1714332963.6369302
+DEBUG 2024-09-28 02:13:18,836 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\storage\base.py first seen with mtime 1714332962.637374
+DEBUG 2024-09-28 02:13:18,836 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\charset.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,836 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\base.py first seen with mtime 1714332963.5431345
+DEBUG 2024-09-28 02:13:18,836 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\_compression.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,836 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\backends\__init__.py first seen with mtime 1714332963.0027292
+DEBUG 2024-09-28 02:13:18,836 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,836 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\views.py first seen with mtime 1714332961.2828434
+DEBUG 2024-09-28 02:13:18,836 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_adapters.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,836 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\opcode.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\uuid.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\fractions.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\security.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\structures.py first seen with mtime 1715450766.5789149
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\__init__.py first seen with mtime 1714332963.4932134
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\backends\base.py first seen with mtime 1714332963.0027292
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\validators.py first seen with mtime 1714332963.5158381
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\mime\nonmultipart.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\utils.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\__init__.py first seen with mtime 1715450766.1775124
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\urllib\error.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\backends\filebased.py first seen with mtime 1714332963.5203896
+DEBUG 2024-09-28 02:13:18,837 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_common.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\operations\__init__.py first seen with mtime 1714332963.6504457
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\ipv6.py first seen with mtime 1714332963.8545794
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\inspect.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\pkgutil.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\_weakrefset.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\utils.py first seen with mtime 1714332960.4184134
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\helpers.py first seen with mtime 1714332960.4184134
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\right_margin.py first seen with mtime 1714332959.3080175
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\parser.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py first seen with mtime 1714332963.6744852
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\base.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,838 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\unicodedata.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\wsgiref\handlers.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\hashers.py first seen with mtime 1714332961.2670403
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\constants.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\__init__.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\subprocess.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\utils.py first seen with mtime 1714332962.634364
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\smartif.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\migration.py first seen with mtime 1714332963.6444354
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\intranges.py first seen with mtime 1715450766.1801012
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\queues.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\constraints.py first seen with mtime 1714332963.6574602
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\__init__.py first seen with mtime 1714332962.6293252
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\pprint.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,839 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\hashlib.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\apps\registry.py first seen with mtime 1714332960.043109
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\hashable.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\policy.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\base.py first seen with mtime 1715454303.5218923
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\response.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\move.py first seen with mtime 1714332963.5386126
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\apps.py first seen with mtime 1714332962.6293252
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py first seen with mtime 1714332963.6670206
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\utils.py first seen with mtime 1714332963.8233309
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\base.py first seen with mtime 1714332963.5386126
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\certifi\__init__.py first seen with mtime 1715450766.5301814
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\paginator.py first seen with mtime 1714332963.5134506
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\asgiref\local.py first seen with mtime 1714332959.8350136
+DEBUG 2024-09-28 02:13:18,840 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_parser.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\mail\__init__.py first seen with mtime 1714332963.5525403
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\views\pages.py first seen with mtime 1727478737.3595366
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\people.py first seen with mtime 1715454303.525027
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\numbers.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\getpass.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\exceptions.py first seen with mtime 1714332963.5122879
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_uuid.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\_os.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\apps.py first seen with mtime 1714332963.0027292
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_hashlib.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaultfilters.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\views\client_views.py first seen with mtime 1727478737.3595366
+DEBUG 2024-09-28 02:13:18,841 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\models.py first seen with mtime 1714332960.4184134
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\futures.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\url.py first seen with mtime 1715450765.8407762
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\cache.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\__version__.py first seen with mtime 1715450766.5705948
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\decorators.py first seen with mtime 1714332960.4164033
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\fields.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\mimetypes.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\__init__.py first seen with mtime 1714332963.8233309
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\operations\fields.py first seen with mtime 1714332963.6504457
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\admin.py first seen with mtime 1714332961.2670403
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\operations\base.py first seen with mtime 1714332963.6504457
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\urls.py first seen with mtime 1714332963.5301936
+DEBUG 2024-09-28 02:13:18,842 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\dates.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\utils.py first seen with mtime 1714332963.5158381
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_subprocess.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py first seen with mtime 1714332963.5473256
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\renderers.py first seen with mtime 1714332963.7022314
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\pickle.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\tokens.py first seen with mtime 1714332959.2980373
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\admin.py first seen with mtime 1727478737.3039815
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_lzma.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\common.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py first seen with mtime 1715450766.5767102
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\middleware.py first seen with mtime 1714332961.2828434
+DEBUG 2024-09-28 02:13:18,843 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\management\commands\runserver.py first seen with mtime 1714332963.507557
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\compatibility\django_4_0.py first seen with mtime 1714332963.5301936
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\apps.py first seen with mtime 1714332960.414532
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\options.py first seen with mtime 1714332960.4184134
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\safestring.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\decorators.py first seen with mtime 1714332961.2670403
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\http.py first seen with mtime 1714332963.8545794
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\deconstruct.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\pathlib.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\json\scanner.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\urllib\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\api.py first seen with mtime 1715450766.3396735
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\bisect.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\views\main.py first seen with mtime 1714332960.9878943
+DEBUG 2024-09-28 02:13:18,844 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\views\admin_views.py first seen with mtime 1727478737.3585367
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\validators.py first seen with mtime 1714332961.2828434
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\base64.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\http.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\models.py first seen with mtime 1715450766.3396735
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\utils.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\protocols.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\__init__.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\conf\locale\__init__.py first seen with mtime 1714332960.051134
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\headerregistry.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\json.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\engine\grouping.py first seen with mtime 1714332959.3020508
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,845 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\locks.py first seen with mtime 1714332963.5386126
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\dispatch\dispatcher.py first seen with mtime 1714332963.6959474
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\tz.py first seen with mtime 1714332963.8233309
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\operations\special.py first seen with mtime 1714332963.6504457
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\packages.py first seen with mtime 1715450766.5767102
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\introspection.py first seen with mtime 1714332963.6014452
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templatetags\custom_filters.py first seen with mtime 1727478737.3545365
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\apps.py first seen with mtime 1714332961.498928
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\choices.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\ddl_references.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\apps.py first seen with mtime 1727478737.3039815
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\detail.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\log.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\translation\__init__.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,846 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\encodings\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\urls.py first seen with mtime 1727478737.3555386
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\quopri.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssl_.py first seen with mtime 1715450765.8392346
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\__init__.py first seen with mtime 1715454303.5062616
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_zoneinfo.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\http\server.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\contentmanager.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\reverse_related.py first seen with mtime 1714332963.682598
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\quoprimime.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\weakref.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,847 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\management\__init__.py first seen with mtime 1714332961.7667608
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\_compat_pickle.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\__init__.py first seen with mtime 1714332961.2670403
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\__init__.py first seen with mtime 1715851268.138565
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\caches.py first seen with mtime 1714332963.5253534
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\zipfile\_path\glob.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\mime\base.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py first seen with mtime 1714332960.9817393
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\password_validation.py first seen with mtime 1714332961.2828434
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_itertools.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\__init__.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\json.py first seen with mtime 1714332963.6744852
+DEBUG 2024-09-28 02:13:18,848 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\dispatch\__init__.py first seen with mtime 1714332963.6959474
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\model_checks.py first seen with mtime 1714332963.5267057
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\checks.py first seen with mtime 1714332960.414532
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\models.py first seen with mtime 1714332963.7022314
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\ctypes\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\base_user.py first seen with mtime 1714332961.2670403
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\log.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\_plotly_utils\importers.py first seen with mtime 1715851268.0453055
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\glob.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\storage\__init__.py first seen with mtime 1714332962.637374
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\models.py first seen with mtime 1714332963.0027292
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\timeout.py first seen with mtime 1715450765.8407762
+DEBUG 2024-09-28 02:13:18,849 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\signals.py first seen with mtime 1714332961.2828434
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\gettext.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\aligned_indent.py first seen with mtime 1714332959.3020508
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\mail\utils.py first seen with mtime 1714332963.5525403
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\exceptions.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\tv.py first seen with mtime 1715454303.5267978
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\_policybase.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\__init__.py first seen with mtime 1714332959.3020508
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\ast.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\others.py first seen with mtime 1714332959.3020508
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\CinemaApp\settings.py first seen with mtime 1727478737.3000135
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,850 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\find.py first seen with mtime 1715454303.5239918
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\http\client.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_tasks.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\__init__.py first seen with mtime 1714332963.5827343
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\models.py first seen with mtime 1714332961.5045474
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\wsgiref\util.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\itercompat.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\zoneinfo\_tzpath.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_sqlite3.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\text.py first seen with mtime 1714332963.68783
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\dateparse.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\__init__.py first seen with mtime 1714332959.2894287
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\base64mime.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,851 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\sqlite3\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\secrets.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\client.py first seen with mtime 1714332963.6345472
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\filepost.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\core.py first seen with mtime 1715450766.1801012
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tmdbsimple\account.py first seen with mtime 1715454303.5062616
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\asgiref\current_thread_executor.py first seen with mtime 1714332959.8350136
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\log.py first seen with mtime 1714332960.9878943
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py first seen with mtime 1714332963.6694262
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_bz2.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,852 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\cache.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\subqueries.py first seen with mtime 1714332963.6928687
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\ctypes\wintypes.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\window.py first seen with mtime 1714332963.68783
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\views\api_views.py first seen with mtime 1727478737.3585367
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\timezone.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\cookie.py first seen with mtime 1714332963.7765186
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\locale.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\zoneinfo\_common.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\l10n.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\lexer.py first seen with mtime 1714332959.2894287
+DEBUG 2024-09-28 02:13:18,853 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\edit.py first seen with mtime 1714332963.886293
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\__init__.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py first seen with mtime 1714332963.6574602
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\forms.py first seen with mtime 1727478737.3051336
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\backends\base.py first seen with mtime 1714332963.5193055
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\md.cp312-win_amd64.pyd first seen with mtime 1715450766.3396735
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\utils.py first seen with mtime 1714332963.5030127
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\statistics.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tzlocal\utils.py first seen with mtime 1715024570.5352612
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\exceptions.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\converters.py first seen with mtime 1714332963.8233309
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py first seen with mtime 1715450765.841786
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\shortcuts.py first seen with mtime 1714332960.0270119
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\engine\filter_stack.py first seen with mtime 1714332959.3020508
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\reprlib.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\client.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\requests.py first seen with mtime 1714332963.207015
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\stringprep.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\autoreload.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,854 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\tree.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\debug.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\__init__.py first seen with mtime 1714332963.5431345
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\lorem_ipsum.py first seen with mtime 1714332963.8576083
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\_abc.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs\_decimal.pyd first seen with mtime 1712663462.0
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\certifi\core.py first seen with mtime 1715450766.5329964
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\validation.py first seen with mtime 1714332963.6041048
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\iterators.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\admin_urls.py first seen with mtime 1714332960.9817393
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\signals.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\tokens.py first seen with mtime 1714332959.3080175
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_collections.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,855 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\aggregates.py first seen with mtime 1714332963.6574602
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\conf\urls\static.py first seen with mtime 1714332960.40679
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\filesystem.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\static.py first seen with mtime 1714332963.8233309
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\models.py first seen with mtime 1727478737.3395379
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\fields.py first seen with mtime 1714332961.5045474
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\admin_modify.py first seen with mtime 1714332960.9817393
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\__init__.py first seen with mtime 1727478737.3000135
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\engine\__init__.py first seen with mtime 1714332959.2980373
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\mime\multipart.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\locks.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\_internal_utils.py first seen with mtime 1715450766.5705948
+DEBUG 2024-09-28 02:13:18,856 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\wsgi.py first seen with mtime 1714332963.5502827
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\duration.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\formsets.py first seen with mtime 1714332963.7010345
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\checks.py first seen with mtime 1714332961.2670403
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py first seen with mtime 1714332963.8077044
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\copy.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\format_helpers.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py first seen with mtime 1714332963.58669
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\__init__.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py first seen with mtime 1714332963.8389552
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\asyncio\exceptions.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py first seen with mtime 1714332963.6928687
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\abc.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,857 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\views\account_views.py first seen with mtime 1727478737.3585367
+DEBUG 2024-09-28 02:13:18,858 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,858 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py first seen with mtime 1715450765.824342
+DEBUG 2024-09-28 02:13:18,858 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\security\csrf.py first seen with mtime 1714332963.5301936
+DEBUG 2024-09-28 02:13:18,858 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\warnings.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,858 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\html.py first seen with mtime 1714332963.8545794
+DEBUG 2024-09-28 02:13:18,858 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\mime\text.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,858 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\keyword.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:18,858 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\constants.py first seen with mtime 1714332963.6574602
+DEBUG 2024-09-28 02:13:18,858 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema first seen with mtime 1727478737.3525367
+DEBUG 2024-09-28 02:13:18,859 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\about_company.html first seen with mtime 1727478737.3405373
+DEBUG 2024-09-28 02:13:18,859 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\account first seen with mtime 1727478737.341537
+DEBUG 2024-09-28 02:13:18,859 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\add_review.html first seen with mtime 1727478737.3425367
+DEBUG 2024-09-28 02:13:18,859 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin first seen with mtime 1727478737.3475366
+DEBUG 2024-09-28 02:13:18,859 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\base.html first seen with mtime 1727478737.3475366
+DEBUG 2024-09-28 02:13:18,859 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\cat_facts.html first seen with mtime 1727478737.3475366
+DEBUG 2024-09-28 02:13:18,859 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\client first seen with mtime 1727478737.3495364
+DEBUG 2024-09-28 02:13:18,859 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\contacts.html first seen with mtime 1727478737.3495364
+DEBUG 2024-09-28 02:13:18,859 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\coupons.html first seen with mtime 1727478737.3505363
+DEBUG 2024-09-28 02:13:18,859 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\employee first seen with mtime 1727478737.3505363
+DEBUG 2024-09-28 02:13:18,860 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\faq.html first seen with mtime 1727478737.3505363
+DEBUG 2024-09-28 02:13:18,860 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\full_answer.html first seen with mtime 1727478737.3505363
+DEBUG 2024-09-28 02:13:18,860 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\index.html first seen with mtime 1727478737.3515363
+DEBUG 2024-09-28 02:13:18,860 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\main.html first seen with mtime 1727478737.3515363
+DEBUG 2024-09-28 02:13:18,860 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\news.html first seen with mtime 1727478737.3515363
+DEBUG 2024-09-28 02:13:18,860 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\news_info.html first seen with mtime 1727478737.3525367
+DEBUG 2024-09-28 02:13:18,860 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\privacy_policy.html first seen with mtime 1727478737.3525367
+DEBUG 2024-09-28 02:13:18,860 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\reviews.html first seen with mtime 1727478737.3525367
+DEBUG 2024-09-28 02:13:18,860 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\vacancies.html first seen with mtime 1727478737.3525367
+DEBUG 2024-09-28 02:13:18,860 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\account\edit_profile.html first seen with mtime 1727478737.3405373
+DEBUG 2024-09-28 02:13:18,861 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\account\home.html first seen with mtime 1727478737.3405373
+DEBUG 2024-09-28 02:13:18,861 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\account\login.html first seen with mtime 1727478737.341537
+DEBUG 2024-09-28 02:13:18,861 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\account\profile.html first seen with mtime 1727478737.341537
+DEBUG 2024-09-28 02:13:18,861 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\account\register.html first seen with mtime 1727478737.341537
+DEBUG 2024-09-28 02:13:18,861 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\add_movie_admin.html first seen with mtime 1727478737.3425367
+DEBUG 2024-09-28 02:13:18,861 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\add_session_admin.html first seen with mtime 1727478737.3425367
+DEBUG 2024-09-28 02:13:18,861 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\add_ticket_admin.html first seen with mtime 1727478737.3435364
+DEBUG 2024-09-28 02:13:18,861 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\base_admin.html first seen with mtime 1727478737.3435364
+DEBUG 2024-09-28 02:13:18,861 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\delete_movie_admin.html first seen with mtime 1727478737.3435364
+DEBUG 2024-09-28 02:13:18,861 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\delete_session_admin.html first seen with mtime 1727478737.3445365
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\delete_ticket_admin.html first seen with mtime 1727478737.3445365
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\details_movie_admin.html first seen with mtime 1727478737.3445365
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\edit_movie_admin.html first seen with mtime 1727478737.3445365
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\edit_session_admin.html first seen with mtime 1727478737.3445365
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\edit_ticket_admin.html first seen with mtime 1727478737.3455362
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\home_admin.html first seen with mtime 1727478737.3455362
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\list_employees_admin.html first seen with mtime 1727478737.3455362
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\list_halls_admin.html first seen with mtime 1727478737.3465366
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\list_movies_admin.html first seen with mtime 1727478737.3465366
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\list_sessions_admin.html first seen with mtime 1727478737.3465366
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\list_tickets_admin.html first seen with mtime 1727478737.3465366
+DEBUG 2024-09-28 02:13:18,862 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\admin\statistics.html first seen with mtime 1727478737.3475366
+DEBUG 2024-09-28 02:13:18,863 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\client\cart.html first seen with mtime 1727478737.3485365
+DEBUG 2024-09-28 02:13:18,863 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\client\info_tickets.html first seen with mtime 1727478737.3485365
+DEBUG 2024-09-28 02:13:18,863 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\client\movies.html first seen with mtime 1727478737.3485365
+DEBUG 2024-09-28 02:13:18,863 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\client\success_ticket.html first seen with mtime 1727478737.3495364
+DEBUG 2024-09-28 02:13:18,863 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\client\tickets.html first seen with mtime 1727478737.3495364
+DEBUG 2024-09-28 02:13:18,863 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\templates\cinema\employee\sales_information.html first seen with mtime 1727478737.3505363
+DEBUG 2024-09-28 02:13:20,013 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0004_alter_session_id.py first seen with mtime 1727478737.306142
+DEBUG 2024-09-28 02:13:20,013 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0013_alter_client_birth_date_alter_employee_birth_date.py first seen with mtime 1727478737.308666
+DEBUG 2024-09-28 02:13:20,014 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\middleware.py first seen with mtime 1714332962.634364
+DEBUG 2024-09-28 02:13:20,014 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\common.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:20,014 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0031_alter_client_birth_date_alter_employee_birth_date.py first seen with mtime 1727478737.3138535
+DEBUG 2024-09-28 02:13:20,014 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0007_rename_end_date_time_showschedule_end_date_and_more.py first seen with mtime 1727478737.307632
+DEBUG 2024-09-28 02:13:20,015 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\migrations\0001_initial.py first seen with mtime 1714332961.7709713
+DEBUG 2024-09-28 02:13:20,015 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0024_alter_client_birth_date_alter_employee_birth_date.py first seen with mtime 1727478737.3116724
+DEBUG 2024-09-28 02:13:20,015 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\graph.py first seen with mtime 1714332963.6444354
+DEBUG 2024-09-28 02:13:20,016 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0005_alter_session_id.py first seen with mtime 1727478737.306142
+DEBUG 2024-09-28 02:13:20,016 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0021_alter_movie_rating.py first seen with mtime 1727478737.3106732
+DEBUG 2024-09-28 02:13:20,016 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0014_dictionaryofterms.py first seen with mtime 1727478737.308666
+DEBUG 2024-09-28 02:13:20,016 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0045_news_summary.py first seen with mtime 1727478737.3179693
+DEBUG 2024-09-28 02:13:20,017 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py first seen with mtime 1714332963.6904442
+DEBUG 2024-09-28 02:13:20,017 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\migrations\0003_logentry_add_action_flag_choices.py first seen with mtime 1714332960.823292
+DEBUG 2024-09-28 02:13:20,017 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0033_article.py first seen with mtime 1727478737.314963
+DEBUG 2024-09-28 02:13:20,018 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0040_cart_client.py first seen with mtime 1727478737.316973
+DEBUG 2024-09-28 02:13:20,019 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0012_news.py first seen with mtime 1727478737.308666
+DEBUG 2024-09-28 02:13:20,019 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\_util.py first seen with mtime 1714571251.7057645
+DEBUG 2024-09-28 02:13:20,019 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0017_alter_review_sender.py first seen with mtime 1727478737.3096728
+DEBUG 2024-09-28 02:13:20,020 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0035_alter_client_birth_date_alter_employee_birth_date.py first seen with mtime 1727478737.314963
+DEBUG 2024-09-28 02:13:20,020 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\migrations\0002_logentry_remove_auto_add.py first seen with mtime 1714332960.811452
+DEBUG 2024-09-28 02:13:20,020 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0029_ticket_is_sold.py first seen with mtime 1727478737.3138535
+DEBUG 2024-09-28 02:13:20,020 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\migrations\__init__.py first seen with mtime 1714332963.1911569
+DEBUG 2024-09-28 02:13:20,020 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\_version.py first seen with mtime 1714571251.7057645
+DEBUG 2024-09-28 02:13:20,021 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0001_initial.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,021 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0038_rename_count_ticket_amount_ticketselling_amount.py first seen with mtime 1727478737.3159695
+DEBUG 2024-09-28 02:13:20,022 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0011_companyinfo.py first seen with mtime 1727478737.308666
+DEBUG 2024-09-28 02:13:20,022 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0010_employee_birth_date_employee_email_and_more.py first seen with mtime 1727478737.307632
+DEBUG 2024-09-28 02:13:20,022 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\backends\db.py first seen with mtime 1714332963.0027292
+DEBUG 2024-09-28 02:13:20,022 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\migrations\0001_initial.py first seen with mtime 1714332963.1911569
+DEBUG 2024-09-28 02:13:20,023 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0025_alter_movie_poster.py first seen with mtime 1727478737.3116724
+DEBUG 2024-09-28 02:13:20,023 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0003_alter_user_email_max_length.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,023 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0019_coupon_promo.py first seen with mtime 1727478737.3106732
+DEBUG 2024-09-28 02:13:20,023 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0009_remove_employee_second_name_employee_surname_and_more.py first seen with mtime 1727478737.307632
+DEBUG 2024-09-28 02:13:20,023 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0020_alter_ticket_price_ticketselling_delete_ticketprice.py first seen with mtime 1727478737.3106732
+DEBUG 2024-09-28 02:13:20,024 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0041_alter_cart_ticket.py first seen with mtime 1727478737.316973
+DEBUG 2024-09-28 02:13:20,024 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\_typing.py first seen with mtime 1714571251.7057645
+DEBUG 2024-09-28 02:13:20,024 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\clickjacking.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:20,024 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\__init__.py first seen with mtime 1714332961.498928
+DEBUG 2024-09-28 02:13:20,025 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\CinemaApp\wsgi.py first seen with mtime 1727478737.3000135
+DEBUG 2024-09-28 02:13:20,025 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\migrations\0002_remove_content_type_name.py first seen with mtime 1714332961.7709713
+DEBUG 2024-09-28 02:13:20,025 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0005_alter_user_last_login_null.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,025 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\csrf.py first seen with mtime 1714332963.8706357
+DEBUG 2024-09-28 02:13:20,026 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\_binary.py first seen with mtime 1714571251.6780853
+DEBUG 2024-09-28 02:13:20,026 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0027_alter_client_birth_date_alter_employee_birth_date.py first seen with mtime 1727478737.3128476
+DEBUG 2024-09-28 02:13:20,026 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0016_review.py first seen with mtime 1727478737.3096728
+DEBUG 2024-09-28 02:13:20,026 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\_imaging.cp312-win_amd64.pyd first seen with mtime 1714571251.685559
+DEBUG 2024-09-28 02:13:20,026 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0009_alter_user_last_name_max_length.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,026 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0032_alter_client_birth_date_alter_employee_birth_date.py first seen with mtime 1727478737.3138535
+DEBUG 2024-09-28 02:13:20,027 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0002_alter_permission_name_max_length.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,027 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\migrations\__init__.py first seen with mtime 1714332960.823292
+DEBUG 2024-09-28 02:13:20,027 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0046_dictionaryofterms_summary.py first seen with mtime 1727478737.3179693
+DEBUG 2024-09-28 02:13:20,027 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0003_alter_session_id.py first seen with mtime 1727478737.306142
+DEBUG 2024-09-28 02:13:20,028 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0018_coupon_alter_client_birth_date_and_more.py first seen with mtime 1727478737.3106732
+DEBUG 2024-09-28 02:13:20,028 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0044_alter_client_birth_date_alter_employee_birth_date.py first seen with mtime 1727478737.3179693
+DEBUG 2024-09-28 02:13:20,028 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\executor.py first seen with mtime 1714332963.6444354
+DEBUG 2024-09-28 02:13:20,028 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0006_remove_showschedule_end_time_and_more.py first seen with mtime 1727478737.306142
+DEBUG 2024-09-28 02:13:20,028 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\migrations\0001_initial.py first seen with mtime 1714332960.811452
+DEBUG 2024-09-28 02:13:20,028 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0036_ticket_count_alter_client_birth_date_and_more.py first seen with mtime 1727478737.3159695
+DEBUG 2024-09-28 02:13:20,029 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0034_partners.py first seen with mtime 1727478737.314963
+DEBUG 2024-09-28 02:13:20,029 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0008_alter_user_username_max_length.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,029 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0010_alter_group_name_max_length.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,030 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\recorder.py first seen with mtime 1714332963.6444354
+DEBUG 2024-09-28 02:13:20,030 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0006_require_contenttypes_0002.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,030 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\TiffTags.py first seen with mtime 1714571251.6725223
+DEBUG 2024-09-28 02:13:20,030 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0026_alter_movie_poster.py first seen with mtime 1727478737.3128476
+DEBUG 2024-09-28 02:13:20,031 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\__init__.py first seen with mtime 1714571251.6725223
+DEBUG 2024-09-28 02:13:20,031 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py first seen with mtime 1714571251.6404226
+DEBUG 2024-09-28 02:13:20,031 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0022_alter_movie_budget.py first seen with mtime 1727478737.3116724
+DEBUG 2024-09-28 02:13:20,031 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0030_alter_client_birth_date_alter_employee_birth_date.py first seen with mtime 1727478737.3138535
+DEBUG 2024-09-28 02:13:20,031 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0015_vacancy.py first seen with mtime 1727478737.3096728
+DEBUG 2024-09-28 02:13:20,031 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0043_alter_cart_amount.py first seen with mtime 1727478737.3179693
+DEBUG 2024-09-28 02:13:20,032 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0023_session_end_time_delete_showschedule.py first seen with mtime 1727478737.3116724
+DEBUG 2024-09-28 02:13:20,032 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0037_alter_ticket_count.py first seen with mtime 1727478737.3159695
+DEBUG 2024-09-28 02:13:20,033 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\backends\locmem.py first seen with mtime 1714332963.522165
+DEBUG 2024-09-28 02:13:20,033 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\migrations\__init__.py first seen with mtime 1714332961.7709713
+DEBUG 2024-09-28 02:13:20,033 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0002_remove_ticketprice_session.py first seen with mtime 1727478737.306142
+DEBUG 2024-09-28 02:13:20,033 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0008_employee_image_employee_phone_number_employee_user_and_more.py first seen with mtime 1727478737.307632
+DEBUG 2024-09-28 02:13:20,033 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0001_initial.py first seen with mtime 1727478737.3051336
+DEBUG 2024-09-28 02:13:20,034 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0042_alter_cart_amount.py first seen with mtime 1727478737.316973
+DEBUG 2024-09-28 02:13:20,035 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0007_alter_validators_add_error_messages.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,035 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\loader.py first seen with mtime 1714332963.6444354
+DEBUG 2024-09-28 02:13:20,035 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\ExifTags.py first seen with mtime 1714571251.6194336
+DEBUG 2024-09-28 02:13:20,035 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\ImageMode.py first seen with mtime 1714571251.645118
+DEBUG 2024-09-28 02:13:20,036 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0012_alter_user_first_name_max_length.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,036 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0039_cart.py first seen with mtime 1727478737.316973
+DEBUG 2024-09-28 02:13:20,036 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0004_alter_user_username_opts.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,037 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\__init__.py first seen with mtime 1727478737.3179693
+DEBUG 2024-09-28 02:13:20,037 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py first seen with mtime 1714332961.4885354
+DEBUG 2024-09-28 02:13:20,037 autoreload 22896 25224 File C:\2kurs_2sem\IGI\253504_KOLESNIKOV_16\IGI\LR5\CinemaApp\cinema\migrations\0028_coupon_is_available.py first seen with mtime 1727478737.3128476
+DEBUG 2024-09-28 02:13:43,899 utils 22896 3992 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-27 23:13:43.897915' AND "django_session"."session_key" = '271kwg7xadbsiqt6x7xx9v1qsciai6r7') LIMIT 21; args=('2024-09-27 23:13:43.897915', '271kwg7xadbsiqt6x7xx9v1qsciai6r7'); alias=default
+DEBUG 2024-09-28 02:13:43,900 utils 22896 3992 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 53 LIMIT 21; args=(53,); alias=default
+DEBUG 2024-09-28 02:13:43,900 utils 22896 3992 (0.000) SELECT "cinema_client"."id", "cinema_client"."user_id", "cinema_client"."name", "cinema_client"."surname", "cinema_client"."email", "cinema_client"."birth_date", "cinema_client"."age", "cinema_client"."phone_number", "cinema_client"."image" FROM "cinema_client" WHERE "cinema_client"."user_id" = 53 LIMIT 21; args=(53,); alias=default
+DEBUG 2024-09-28 02:13:43,901 utils 22896 3992 (0.000) SELECT "cinema_employee"."id", "cinema_employee"."user_id", "cinema_employee"."name", "cinema_employee"."surname", "cinema_employee"."email", "cinema_employee"."birth_date", "cinema_employee"."role", "cinema_employee"."phone_number", "cinema_employee"."image" FROM "cinema_employee" WHERE "cinema_employee"."user_id" = 53 LIMIT 21; args=(53,); alias=default
+DEBUG 2024-09-28 02:13:43,901 base 22896 3992 Exception while resolving variable 'employee' in template 'cinema/account/home.html'.
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'User' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 525, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.employee.RelatedObjectDoesNotExist: User has no employee.
+INFO 2024-09-28 02:13:43,935 basehttp 22896 3992 "GET / HTTP/1.1" 200 3704
+WARNING 2024-09-28 02:13:44,041 basehttp 22896 3992 "GET /static/css/stylesheet.css HTTP/1.1" 404 1813
+DEBUG 2024-09-28 02:13:44,774 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\conf\locale\en\__init__.py first seen with mtime 1714332960.116087
+DEBUG 2024-09-28 02:13:44,776 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1714332963.0027292
+DEBUG 2024-09-28 02:13:44,777 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\conf\locale\en\formats.py first seen with mtime 1714332960.116087
+DEBUG 2024-09-28 02:13:44,779 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tzdata\zoneinfo\__init__.py first seen with mtime 1714332958.7530806
+DEBUG 2024-09-28 02:13:44,782 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\storage.py first seen with mtime 1714332963.495951
+DEBUG 2024-09-28 02:13:44,783 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\context_processors.py first seen with mtime 1714332961.2670403
+DEBUG 2024-09-28 02:13:44,783 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tzdata\zoneinfo\Europe\__init__.py first seen with mtime 1714332959.134022
+DEBUG 2024-09-28 02:13:44,784 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1714332962.637374
+DEBUG 2024-09-28 02:13:44,785 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1714332962.6333406
+DEBUG 2024-09-28 02:13:44,787 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\_strptime.py first seen with mtime 1712663418.0
+DEBUG 2024-09-28 02:13:44,787 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\tzdata\__init__.py first seen with mtime 1714332958.698579
+DEBUG 2024-09-28 02:13:44,790 autoreload 22896 25224 File C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\context_processors.py first seen with mtime 1714332963.7920468
+DEBUG 2024-09-28 02:13:53,282 utils 22896 25016 (0.000) SELECT "cinema_news"."id", "cinema_news"."title", "cinema_news"."description", "cinema_news"."summary", "cinema_news"."url", "cinema_news"."image", "cinema_news"."image_url" FROM "cinema_news"; args=(); alias=default
+DEBUG 2024-09-28 02:13:53,290 utils 22896 25016 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-27 23:13:53.289936' AND "django_session"."session_key" = '271kwg7xadbsiqt6x7xx9v1qsciai6r7') LIMIT 21; args=('2024-09-27 23:13:53.289936', '271kwg7xadbsiqt6x7xx9v1qsciai6r7'); alias=default
+DEBUG 2024-09-28 02:13:53,290 utils 22896 25016 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 53 LIMIT 21; args=(53,); alias=default
+DEBUG 2024-09-28 02:13:53,291 utils 22896 25016 (0.000) SELECT "cinema_client"."id", "cinema_client"."user_id", "cinema_client"."name", "cinema_client"."surname", "cinema_client"."email", "cinema_client"."birth_date", "cinema_client"."age", "cinema_client"."phone_number", "cinema_client"."image" FROM "cinema_client" WHERE "cinema_client"."user_id" = 53 LIMIT 21; args=(53,); alias=default
+DEBUG 2024-09-28 02:13:53,291 utils 22896 25016 (0.000) SELECT "cinema_employee"."id", "cinema_employee"."user_id", "cinema_employee"."name", "cinema_employee"."surname", "cinema_employee"."email", "cinema_employee"."birth_date", "cinema_employee"."role", "cinema_employee"."phone_number", "cinema_employee"."image" FROM "cinema_employee" WHERE "cinema_employee"."user_id" = 53 LIMIT 21; args=(53,); alias=default
+DEBUG 2024-09-28 02:13:53,292 base 22896 25016 Exception while resolving variable 'employee' in template 'cinema/news.html'.
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'User' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 525, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.employee.RelatedObjectDoesNotExist: User has no employee.
+INFO 2024-09-28 02:13:53,296 basehttp 22896 25016 "GET /news/ HTTP/1.1" 200 17236
+WARNING 2024-09-28 02:13:53,325 basehttp 22896 25016 "GET /static/css/stylesheet.css HTTP/1.1" 404 1813
+DEBUG 2024-09-28 02:13:57,706 utils 22896 24452 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-27 23:13:57.705849' AND "django_session"."session_key" = '271kwg7xadbsiqt6x7xx9v1qsciai6r7') LIMIT 21; args=('2024-09-27 23:13:57.705849', '271kwg7xadbsiqt6x7xx9v1qsciai6r7'); alias=default
+DEBUG 2024-09-28 02:13:57,707 utils 22896 24452 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 53 LIMIT 21; args=(53,); alias=default
+DEBUG 2024-09-28 02:13:57,707 utils 22896 24452 (0.000) SELECT "cinema_client"."id", "cinema_client"."user_id", "cinema_client"."name", "cinema_client"."surname", "cinema_client"."email", "cinema_client"."birth_date", "cinema_client"."age", "cinema_client"."phone_number", "cinema_client"."image" FROM "cinema_client" WHERE "cinema_client"."user_id" = 53 LIMIT 21; args=(53,); alias=default
+DEBUG 2024-09-28 02:13:57,709 utils 22896 24452 (0.000) SELECT "cinema_employee"."id", "cinema_employee"."user_id", "cinema_employee"."name", "cinema_employee"."surname", "cinema_employee"."email", "cinema_employee"."birth_date", "cinema_employee"."role", "cinema_employee"."phone_number", "cinema_employee"."image" FROM "cinema_employee" WHERE "cinema_employee"."user_id" = 53 LIMIT 21; args=(53,); alias=default
+DEBUG 2024-09-28 02:13:57,709 base 22896 24452 Exception while resolving variable 'employee' in template 'cinema/about_company.html'.
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'User' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 525, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.employee.RelatedObjectDoesNotExist: User has no employee.
+DEBUG 2024-09-28 02:13:57,710 utils 22896 24452 (0.000) SELECT "cinema_companyinfo"."id", "cinema_companyinfo"."text" FROM "cinema_companyinfo"; args=(); alias=default
+INFO 2024-09-28 02:13:57,712 basehttp 22896 24452 "GET /about/ HTTP/1.1" 200 7867
+WARNING 2024-09-28 02:13:57,737 basehttp 22896 24452 "GET /static/css/stylesheet.css HTTP/1.1" 404 1813
+INFO 2024-09-28 02:14:01,710 basehttp 22896 24356 - Broken pipe from ('127.0.0.1', 62961)
