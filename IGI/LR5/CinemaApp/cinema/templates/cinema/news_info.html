@@ -1,0 +1,19 @@
+{% extends 'cinema/base.html' %}
+
+{% block header %}Movie: {{ news_data.title }}{% endblock %}
+
+{% block content %}
+<section>
+    <article>
+        <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+            <h2>{{ news_data.title }}</h2>
+            <p>
+                <img src="{{ news_data.image.url }}" height="200">
+            </p>
+            <p>
+                {{ news_data.description }}
+            </p>
+        </div>
+    </article>
+</section>
+{% endblock %}

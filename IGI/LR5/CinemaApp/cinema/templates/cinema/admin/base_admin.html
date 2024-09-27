@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}<title>Your Cinema</title>{% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+    <div>
+        <a href="{% url 'home' %}">Exit</a> |
+        <a href="{% url 'index_admin_movies' %}">List of Movies</a> |
+        <a href="{% url 'index_admin_tickets' %}">List of Tickets</a> |
+        <a href="{% url 'index_admin_sessions' %}">List of Sessions</a> |
+        <a href="{% url 'index_admin_halls' %}">List of Halls</a> |
+        <a href="{% url 'index_admin_employees' %}">List of Employees</a><br>
+        <a href="{% url 'movie_new' %}">Add Movie</a> |
+        <a href="{% url 'movie_edit' %}">Edit Movie</a> |
+        <a href="{% url 'movie_delete' %}">Delete Movie</a><br>
+        <a href="{% url 'ticket_new' %}">Add Ticket</a> |
+        <a href="{% url 'ticket_edit' %}">Edit Ticket</a> |
+        <a href="{% url 'ticket_delete' %}">Delete Ticket</a><br>
+        <a href="{% url 'session_new' %}">Add Session</a> |
+        <a href="{% url 'session_edit' %}">Edit Session</a> |
+        <a href="{% url 'session_delete' %}">Delete Session</a><br>
+        <a href="{% url 'statistics' %}">Statistics</a> |
+    </div>
+
+    <h1>{% block header %}{% endblock header %}</h1>
+    <div>{% block content %}{% endblock content %}</div>
+</body>
+</html>

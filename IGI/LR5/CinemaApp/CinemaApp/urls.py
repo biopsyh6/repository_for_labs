@@ -1,0 +1,115 @@
+"""
+URL configuration for CinemaApp project.
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/5.0/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path, include, re_path
+from cinema.views import views, api_views, admin_views, client_views, employee_views
+from django.views.generic.base import TemplateView
+from cinema.views.views import *
+
+from django.conf.urls.static import static
+from django.conf import settings
+
+
+from django.contrib.auth import views as auth_views
+from cinema.views import account_views, views, pages
+
+
+urlpatterns = [
+
+
+
+    path('admin/', admin.site.urls),
+    # path('register/', UserRegistrationView.as_view(), name='register'),
+    # path('login/', UserAuthorizationView.as_view(), name='login'),
+    # path('logout/', UserLogoutView.as_view(), name='logout'),
+
+    # path('', TemplateView.as_view(template_name='cinema/home.html'), name='home'),
+
+    
+    path('', include('cinema.urls')),
+    # path('cinema/', include('django.contrib.auth.urls')),
+
+
+    # path('', views.index, name='home')
+    # path('', views.index_last_session, name='home'),
+    re_path(r'^accounts/register/$', account_views.register, name='register'),
+    re_path(r'^accounts/login/$', account_views.login, name='login'),
+    re_path(r'^accounts/logout/$', account_views.logout, name='logout'),
+    re_path(r'^accounts/profile/$', account_views.profile, name='profile'),
+    re_path(r'^accounts/edit_profile/$', account_views.edit_profile, name='edit_profile'),
+    re_path(r'^main/$', views.home_index, name='main'),
+    re_path(r'^about/$', views.about_company, name='about'),
+
+
+    re_path(r'^news/$', api_views.news, name='news'),
+    re_path(r'^cat_facts/$', api_views.cats, name='cats'),
+    re_path(r'^news/(?P<pk>\d+)/$', api_views.full_description, name='full_description'),
+
+
+    re_path(r'^faq/$', views.terms, name='faq'),
+    re_path(r'^faq/(?P<pk>\d+)/$', views.full_answer, name='full_answer'),
+    re_path(r'^contacts/$', views.contacts, name='contacts'),
+    re_path(r'^vacancies/$', views.vacancies, name='vacancies'),
+    re_path(r'^reviews/$', views.reviews, name='reviews'),
+    re_path(r'^add_review/$', views.add_review, name='add_review'),
+    re_path(r'^coupons/$', views.coupons, name='coupons'),
+    re_path(r'^privacy_policy/$', views.privacy_policy, name='privacy_policy'),
+
+    path('', pages.home, name='home'),
+
+
+    #Employee
+    re_path(r'^sales_information/$', employee_views.info_sales, name='info_sales'),
+
+    #Client
+    re_path(r'^movies/$', client_views.index_client_movies, name='index_client_movies'),
+    re_path(r'^tickets/(?P<pk>\d+)/$', client_views.movie_tickets, name='movie_tickets'),
+    re_path(r'^buy_ticket/$', client_views.buy_ticket, name='buy_ticket'),
+    re_path(r'^success_ticket/(?P<total_price>\d+(\.\d+)?)/(?P<promo>.*)/$', client_views.success_ticket, name='success_ticket'),
+    re_path(r'^information_tickets/$', client_views.index_information_tickets, name='index_information_tickets'),
+    re_path(r'^cart/$', client_views.cart, name='cart'),
+    re_path(r'^add_cart/(?P<pk>\d+)/$', client_views.add_cart, name='add_cart'),
+    re_path(r'^remove_cart_item/(?P<item_id>\d+)/$', client_views.remove_cart_item, name='remove_cart_item'),
+
+    # re_path(r'^use_coupon/(?P<pk>\d+)/$', client_views.use_coupon, name='use_coupon'),
+
+
+
+    #Admin panel
+    re_path(r'^home_admin/$', admin_views.to_admin, name='to_admin'),
+    re_path(r'^list_movies_admin/$', admin_views.index_admin_movies, name='index_admin_movies'),
+    re_path(r'^list_tickets_admin/$', admin_views.index_admin_tickets, name='index_admin_tickets'),
+    re_path(r'^list_sessions_admin/$', admin_views.index_admin_sessions, name='index_admin_sessions'),
+    re_path(r'^list_halls_admin/$', admin_views.index_admin_halls, name='index_admin_halls'),
+    re_path(r'^list_employees_admin/$', admin_views.index_admin_employees, name='index_admin_employees'),
+    re_path(r'^add_movie_admin/$', admin_views.movie_new, name='movie_new'),
+    # re_path(r'^edit_movie_admin/(?P<pk>\d+)/$', admin_views.movie_edit, name='movie_edit'),
+    re_path(r'^edit_movie_admin/$', admin_views.movie_edit, name='movie_edit'),
+    re_path(r'^delete_movie_admin/$', admin_views.movie_delete, name='movie_delete'),
+    re_path(r'^add_ticket_admin/$', admin_views.ticket_new, name='ticket_new'),
+    re_path(r'^edit_ticket_admin/$', admin_views.ticket_edit, name='ticket_edit'),
+    re_path(r'^delete_ticket_admin/$', admin_views.ticket_delete, name='ticket_delete'),
+    re_path(r'^add_session_admin/$', admin_views.session_new, name='session_new'),
+    re_path(r'^edit_session_admin/$', admin_views.session_edit, name='session_edit'),
+    re_path(r'^delete_session_admin/$', admin_views.session_delete, name='session_delete'),
+
+    re_path(r'^statistics/$', admin_views.statistics, name='statistics'),
+    re_path(r'^movie_admin_details/(?P<pk>\d+)/$', admin_views.movie_admin_details, name='movie_admin_details'),
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

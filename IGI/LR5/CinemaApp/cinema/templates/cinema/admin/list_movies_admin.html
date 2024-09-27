@@ -1,0 +1,11 @@
+{% extends 'cinema/admin/base_admin.html' %}
+
+{% block header %}List of Movies{% endblock %}
+
+{% block content %}
+        {% for movie in movies %}
+        <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+            <a href="{% url 'movie_admin_details' pk=movie.pk %}">{{ movie.title }}</a>
+        </div>
+        {% endfor %}
+{% endblock %}

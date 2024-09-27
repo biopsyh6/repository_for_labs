@@ -1,0 +1,16 @@
+{% extends 'cinema/admin/base_admin.html' %}
+
+{% block header %}Delete Ticket{% endblock %}
+
+{% block content %}
+<form method="POST" enctype='multipart/form-data'>
+    {% csrf_token %}
+    <select name="ticket">
+        {% for ticket in tickets %}
+            <option value="{{ ticket.pk }}">{{ ticket.session.movie.title }}, {{ ticket.session.start_time }}, {{ ticket.session.hall.name }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Delete</button>
+</form>
+
+{% endblock %}

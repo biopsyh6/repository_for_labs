@@ -1,0 +1,14 @@
+{% extends 'cinema/base.html' %}
+
+{% block header %}Success{% endblock %}
+
+{% block content %}
+    <section>
+        <h2>Thank you for your purchase!</h2>
+        <p>You have successfully purchased tickets.</p>
+        <p><b>Final price: {{ total_price|floatformat:2 }}$</b></p>
+        {% if promo %}
+            <p>Promo Code Applied: <em>{{ promo }}</em></p>
+        {% endif %}
+    </section>
+{% endblock %}

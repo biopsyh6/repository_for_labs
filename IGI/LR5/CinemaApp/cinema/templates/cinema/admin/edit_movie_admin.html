@@ -1,0 +1,17 @@
+{% extends 'cinema/admin/base_admin.html' %}
+
+{% block header %}Edit Movie{% endblock %}
+
+{% block content %}
+<form method="POST" enctype='multipart/form-data'>
+    {% csrf_token %}
+    <select name="movie">
+        {% for movie in movies %}
+            <option value="{{ movie.pk }}">{{ movie.title }}</option>
+        {% endfor %}
+    </select>
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+
+{% endblock %}

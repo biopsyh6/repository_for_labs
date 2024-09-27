@@ -1,0 +1,24 @@
+{% extends 'cinema/base.html' %}
+{% block header %}News{% endblock %}
+{% block content %}
+    <section itemscope itemtype="https://schema.org/NewsArticle">
+        {% for n in news %}
+        <div itemprop="articleBody" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+            <h2>{{ n.title }}</h2>
+            <table>
+                <tr>
+                    <p>
+                        <img src="{{ n.image.url }}" height="200">
+                    </p>
+                    <p>
+                        {{ n.summary }}
+                    </p>
+                    <a href="{% url 'full_description' n.id %}">
+                        <p><em>Read more</em></p>
+                    </a>
+                </tr>
+            </table>
+        </div>
+        {% endfor %}
+    </section>
+{% endblock %}

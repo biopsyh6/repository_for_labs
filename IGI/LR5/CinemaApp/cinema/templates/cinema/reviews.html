@@ -1,0 +1,21 @@
+{% extends 'cinema/base.html' %}
+{% block header %}Reviews{% endblock %}
+
+{% block content %}
+    {% comment %} {% if is_auth %} {% endcomment %}
+        <a href="{% url 'add_review' %}">Add Review</a>
+    {% comment %} {% endif %} {% endcomment %}
+    {% for review in all_reviews %}
+    <section>
+        <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+            <section itemscope itemtype="https://schema.org/Review">
+                <p>Name: {{ review.sender.name }}</p>
+                <p>Surname: {{ review.sender.surname }}</p>
+                <p itemprop="reviewRating">Rate: {{ review.rate }}</p>
+                <p>Date: {{ review.date }}</p>
+                <p itemprop="reviewBody">Comment: {{ review.text }}</p>
+            </section>
+        </div>
+    </section>
+    {% endfor %}
+{% endblock %}

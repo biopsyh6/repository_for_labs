@@ -1,0 +1,41 @@
+{% extends 'cinema/base.html' %}
+{% block header %}FAQ{% endblock %}
+
+{% block content %}
+<section translate="yes">
+    <section>
+        {% for term in all_terms%}
+            <article>
+                <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+                    <p>Question: {{ term.question }}</p>
+                    <details>
+                        <summary>
+                            "Description
+                        </summary>
+                        <p>Answer: {{ term.answer }}</p>
+                    </details>
+
+                    <p>Date of Publication: <time datetime="{{ term.date }}">{{ term.date }}</time></p>
+                    {% comment %} <a href="{% url 'full_answer' term.id %}">
+                        <p><em>Show Full Answer</em></p> {% endcomment %}
+                    </a>
+                </div>
+            </article>
+        {% endfor %}
+    </section>
+    <hr>
+    <section>
+        <dl>
+            <dt>"Cinema" Online-Service</dt>
+            <dd>is a platform that allows you to buy movie tickets anywhere at a convenient time.</dd>
+
+            <dt>Movie show</dt>
+            <dd>is a demonstration of a certain program of films to the audience.</dd>
+
+            <dt>Electronic ticket</dt>
+            <dd>is a document drawn up in electronic digital form and certifying the right of the first person to present it to attend the film screening specified therein upon presentation of the specified document</dd>
+        </dl>
+    </section>
+    <hr>
+</section>
+{% endblock %}
