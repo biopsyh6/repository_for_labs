@@ -3,10 +3,12 @@
 {% block header %}Success{% endblock %}
 
 {% block content %}
-    <h2>Thank you for your purchase!</h2>
-    <p>You have successfully purchased a ticket for {{ ticket.session.movie.title }}.</p>
-    <p>Final price: {{ ticket.price|floatformat:2 }}$</p>
-    {% if promo_code %}
-        <p>Promo Code Applied: {{ promo_code }}</p>
-    {% endif %}
+    <section>
+        <h2>Thank you for your purchase!</h2>
+        <p>You have successfully purchased tickets.</p>
+        <p><b>Final price: {{ total_price|floatformat:2 }}$</b></p>
+        {% if promo %}
+            <p>Promo Code Applied: <em>{{ promo }}</em></p>
+        {% endif %}
+    </section>
 {% endblock %}

@@ -171,6 +171,8 @@ class Ticket(models.Model):
     price = models.FloatField(help_text="Enter price")
     employee = models.ForeignKey(Employee, on_delete=models.CASCADE, help_text="Enter the employee who sold the ticket")
     is_sold = models.BooleanField(default=False)
+    amount = models.IntegerField(help_text="Enter the number of tickets", default=1, validators=[MinValueValidator(1),
+                                                                                                MaxValueValidator(100)])
 
     def __str__(self):
         """
@@ -186,17 +188,23 @@ class TicketSelling(models.Model):
     ticket = models.ForeignKey(Ticket, on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now_add=True)
     promo_code = models.CharField(max_length=20, null=True)
+    amount = models.IntegerField(default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
     def apply_promo(self, promo):
         if UsedCoupons.objects.filter(user_id=self.client, coupon__promo=promo.promo).exists():
             return
-        self.ticket.price *= 1 - promo.discount/100
+        total_price = self.ticket.price * self.amount
+        discounted_price = total_price * (1 - promo.discount / 100)
+        self.ticket.price = discounted_price / self.amount
         self.promo_code = promo.promo
         self.save()
 
         logging.info(f'Applied promo for {self.ticket.session.movie.title}')
 
         UsedCoupons.objects.create(coupon=promo, user=self.client)
+
+    def get_price(self):
+        return self.ticket.price * self.amount
 
     
 # class ShowSchedule(models.Model):
@@ -219,7 +227,6 @@ class CompanyInfo(models.Model):
     Model representing a company info
     """
     text = models.TextField()
-
     def __str__(self):
         """
         String for representing the CompanyInfo object.
@@ -232,6 +239,7 @@ class News(models.Model):
     """
     title = models.CharField(max_length=100, default='')
     description = models.CharField(max_length=1000, default='')
+    summary = models.CharField(max_length=85, default='')
     url = models.URLField(max_length=1000, default='')
     image = models.ImageField(upload_to='news/', default='news/no_image_icon.png')
     image_url = models.URLField(max_length=1000, null=True)
@@ -254,6 +262,10 @@ class News(models.Model):
                 return True
         else:
             return False
+        
+    @classmethod
+    def get_latest_news(cls):
+        return cls.objects.latest('id')
 
     def __str__(self):
         """
@@ -267,6 +279,7 @@ class DictionaryOfTerms(models.Model):
     """
     question = models.CharField(max_length=1000)
     answer = models.TextField()
+    summary = models.CharField(max_length=40, default='')
     date = models.DateField(auto_now_add=True)
 
     def __str__(self):
@@ -319,3 +332,23 @@ class UsedCoupons(models.Model):
     """
     coupon = models.ForeignKey(Coupon, on_delete=models.CASCADE)
     user = models.ForeignKey(Client, on_delete=models.CASCADE)
+    
+class Article(models.Model):
+    title = models.CharField(max_length=70)
+    content = models.TextField()
+    image = models.ImageField(upload_to="articles/")
+    date = models.DateTimeField(auto_now_add=True)
+
+class Partners(models.Model):
+    title = models.CharField(max_length=70)
+    logo = models.ImageField(upload_to="partners/")
+    link = models.URLField()
+
+class Cart(models.Model):
+    ticket = models.ForeignKey(Ticket, on_delete=models.CASCADE, null=True, blank=True)
+    amount = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(100)], null=True)
+    client = models.ForeignKey(Client, related_name='cart_items', on_delete=models.CASCADE, null=True)
+    def get_price(self):
+        if self.ticket and self.ticket.price:
+            return (self.amount * self.ticket.price)
+        return 0

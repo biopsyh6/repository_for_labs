@@ -54,6 +54,18 @@ class DictionaryOfTermsAdmin(admin.ModelAdmin):
 class VacancyAdmin(admin.ModelAdmin):
     list_display = ('name', 'salary')
 
+@admin.register(Article)
+class ArticleAdmin(admin.ModelAdmin):
+    list_display = ('title', 'date')
+
+@admin.register(Partners)
+class PartnersAdmin(admin.ModelAdmin):
+    list_display = ('title', 'link')
+
+@admin.register(Cart)
+class CartAdmin(admin.ModelAdmin):
+    list_display = ('ticket', 'amount', 'client')
+
 admin.site.register(Review)
 admin.site.register(Coupon)
 admin.site.register(UsedCoupons)

@@ -5,17 +5,19 @@
 {% block header %}Home{% endblock %}
 
 {% block content %}
-{% if user.is_authenticated %}
-    Hi {{ user.username }}!
-    <p>Date: {{ date }}</p>
-    {% get_current_timezone as TIME_ZONE %}
-    User's TIMEZONE: {{ TIME_ZONE }}
-    <p>Last date DB: {{ date_db }}</p>
-    <p><pre>{{ cal }}</pre></p>
-    <p><a href="{% url 'logout' %}">Logout</a></p>
-{% else %}
-    <p>You are not logged in</p>
-    <a href="{% url 'login' %}">Login</a> |
-    <a href="{% url 'register' %}">Register</a>
-{% endif %}
+<section>
+    {% if user.is_authenticated %}
+        Hi {{ user.username }}!
+        <p>Date: {{ date }}</p>
+        {% get_current_timezone as TIME_ZONE %}
+        User's TIMEZONE: {{ TIME_ZONE }}
+        <p>Last date DB: {{ date_db }}</p>
+        <p><pre>{{ cal }}</pre></p>
+        <p><a href="{% url 'logout' %}">Logout</a></p>
+    {% else %}
+        <p><b>You are not logged in</b></p>
+        <a href="{% url 'login' %}">Login</a> |
+        <a href="{% url 'register' %}">Register</a>
+    {% endif %}
+</section>
 {% endblock %}

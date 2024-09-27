@@ -35,6 +35,8 @@ def update_news():
             news_obj = News()
             news_obj.title = film['original_title']
             news_obj.description = film['overview']
+            dots = "..."
+            news_obj.summary = news_obj.description[:85] + dots
             # news_obj.url = film['url']
             news_obj.image_url = 'https://image.tmdb.org/t/p/w500' + film['poster_path']
             news_obj.save_image_from_url()
@@ -42,11 +44,15 @@ def update_news():
     return
 
 def news(request):
-    update_news()
+    # update_news()
     news_data = News.objects.all()
     logger.info("Get News objects successfully")
     data = {'news': reversed(news_data)}
     return render(request, 'cinema/news.html', context=data)
+
+def full_description(request, pk):
+    news_data = News.objects.get(pk=pk)
+    return render(request, 'cinema/news_info.html', {"news_data": news_data})
 
 
 def cats(request):

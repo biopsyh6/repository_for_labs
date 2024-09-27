@@ -2,12 +2,32 @@
 
 {% block content %}
 
-<form method="POST" novalidate>
+{% comment %} <form method="POST" novalidate>
 	{% csrf_token %}
 	<center><h2>Sign in</h2>
 	<b>{{ form.as_p }}</b>
 	<button type="submit" >Login</button>
-	<p>Don't have an account? <a href="{%url 'register' %}">Sign up</a></p></center>
+	<p><em>Don't have an account? <a href="{%url 'register' %}">Sign up</a></em></p></center>
+</form> {% endcomment %}
+<form method="POST" novalidate>
+    {% csrf_token %}
+    <center>
+        <h2>Sign in</h2>
+        <b>
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </p>
+        </b>
+        <button type="submit">Login</button>
+        <p>
+            <em>Don't have an account? <a href="{% url 'register' %}">Sign up</a></em>
+        </p>
+    </center>
 </form>
 
 {% endblock content%}

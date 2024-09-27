@@ -61,4 +61,3 @@ class ProfileForm(django.forms.ModelForm):
                    'image': django.forms.FileInput(attrs={'class':'form-control', 'required':False,})
                    }
         
-    

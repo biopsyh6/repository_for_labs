@@ -6,6 +6,7 @@ from django.views.generic.edit import CreateView
 from django.contrib.auth.views import LoginView
 from django.views.generic import *
 from django.urls import reverse_lazy
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import auth
 from django.shortcuts import render, redirect
 from cinema.forms import ReviewForm
@@ -185,13 +186,28 @@ def index_sessions(request):
     logger.info(f"Get all sessions successfully")
     return render(request, "index.html", {"sessions": sessions})
 
-def index_last_session(request):
+def home_index(request):
     """
-    Get the latest Session object from database.
+    Get the latest Session object from database. Get ticket objects from database. Get the latest News object from database.
     """
     latest_session = Session.objects.order_by('-start_time').first()
     logger.info(f"Get last session successfully")
-    return render(request, "cinema/main.html", {"session": latest_session})
+    tickets = Ticket.objects.filter(is_sold=False).select_related('session__movie')
+
+    ticket_info = [
+        {
+            'movie_title': ticket.session.movie.title,
+            'price': ticket.price,
+            'movie': ticket.session.movie
+        }
+        for ticket in tickets
+    ]
+    latest_news = News.get_latest_news()
+    partners = Partners.objects.all()
+    return render(request, "cinema/main.html", {"session": latest_session, 
+                                                "ticket_info": ticket_info, 
+                                                "latest_news": latest_news,
+                                                "partners": partners})
 
 def create_session(request):
     """
@@ -241,7 +257,7 @@ def about_company(request):
     """
     Get CompanyInfo objects from database. 
     """
-    company_info = CompanyInfo.objects.first()
+    company_info = CompanyInfo.objects.all()
     logger.info(f"Get company info")
     return render(request, "cinema/about_company.html", {"company_info": company_info})
 
@@ -250,8 +266,15 @@ def terms(request):
     Get DictionaryOfTerms objects from database.
     """
     all_terms = DictionaryOfTerms.objects.all()
+    for term in all_terms:
+        term.summary = term.answer[:38] + "..."
+        term.save()
     logger.info("Get the questions and answers")
     return render(request, "cinema/faq.html", {"all_terms": all_terms})
+
+def full_answer(request, pk):
+    term = DictionaryOfTerms.objects.get(pk=pk)
+    return render(request, "cinema/full_answer.html", {"term": term})
 
 def contacts(request):
     """
@@ -278,6 +301,7 @@ def reviews(request):
     is_auth = request.user.is_authenticated
     return render(request, "cinema/reviews.html", {"all_reviews": all_reviews, "is_auth": is_auth})
 
+@login_required
 def add_review(request):
     """
     Add Review object to database.
@@ -305,3 +329,6 @@ def coupons(request):
     used_coupons = UsedCoupons.objects.all()
     logger.info(f"Get coupons and used_coupons successfully")
     return render(request, "cinema/coupons.html", {"coupons": coupons, "used_coupons": used_coupons})
+
+def privacy_policy(request):
+    return render(request, "cinema/privacy_policy.html")

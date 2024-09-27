@@ -3,17 +3,21 @@
 {% block header %}Contacts{% endblock %}
 
 {% block content %}
+<section>
     {% for employee in all_employees %}
-        <div style="display: flex; align-items: start; margin-bottom: 20px; border: 1px solid #ccc;" >
-            <img src="{{ employee.image.url }}" height="200" width="200" style="margin-right: 20px;">
-                <div>
-                    <p>Name: {{ employee.name }}</p>
-                    <p>Surname: {{ employee.surname }}</p>
-                    <p>Birth Date: {{ employee.birth_date }}</p>
-                    <p>Speciality: {{ employee.get_role_display }}</p>
-                    <p>Email: {{ employee.email }}</p>
-                    <p>Phone Number: {{ employee.phone_number }}</p>
-                </div>
-        </div>
+        <article>
+            <div style="display: flex; align-items: start; margin-bottom: 20px; border: 1px solid #ccc;" >
+                <img src="{{ employee.image.url }}" height="200" width="200" style="margin-right: 20px;">
+                    <div>
+                        <p>Name: {{ employee.name }}</p>
+                        <p>Surname: {{ employee.surname }}</p>
+                        <p>Birth Date: {{ employee.birth_date }}</p>
+                        <p>Speciality: {{ employee.get_role_display }}</p>
+                        <p>Email: {{ employee.email }}</p>
+                        <p>Phone Number: {{ employee.phone_number }}</p>
+                    </div>
+            </div>
+        </article>
     {% endfor %}
+</section>
 {% endblock %}

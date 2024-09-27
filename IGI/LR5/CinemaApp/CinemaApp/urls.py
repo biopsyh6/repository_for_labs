@@ -51,20 +51,23 @@ urlpatterns = [
     re_path(r'^accounts/logout/$', account_views.logout, name='logout'),
     re_path(r'^accounts/profile/$', account_views.profile, name='profile'),
     re_path(r'^accounts/edit_profile/$', account_views.edit_profile, name='edit_profile'),
-    re_path(r'^main/$', views.index_last_session, name='main'),
+    re_path(r'^main/$', views.home_index, name='main'),
     re_path(r'^about/$', views.about_company, name='about'),
 
 
     re_path(r'^news/$', api_views.news, name='news'),
     re_path(r'^cat_facts/$', api_views.cats, name='cats'),
+    re_path(r'^news/(?P<pk>\d+)/$', api_views.full_description, name='full_description'),
 
 
     re_path(r'^faq/$', views.terms, name='faq'),
+    re_path(r'^faq/(?P<pk>\d+)/$', views.full_answer, name='full_answer'),
     re_path(r'^contacts/$', views.contacts, name='contacts'),
     re_path(r'^vacancies/$', views.vacancies, name='vacancies'),
     re_path(r'^reviews/$', views.reviews, name='reviews'),
     re_path(r'^add_review/$', views.add_review, name='add_review'),
     re_path(r'^coupons/$', views.coupons, name='coupons'),
+    re_path(r'^privacy_policy/$', views.privacy_policy, name='privacy_policy'),
 
     path('', pages.home, name='home'),
 
@@ -75,9 +78,12 @@ urlpatterns = [
     #Client
     re_path(r'^movies/$', client_views.index_client_movies, name='index_client_movies'),
     re_path(r'^tickets/(?P<pk>\d+)/$', client_views.movie_tickets, name='movie_tickets'),
-    re_path(r'^buy_ticket/(?P<pk>\d+)/$', client_views.buy_ticket, name='buy_ticket'),
-    re_path(r'^success_ticket/(?P<pk>\d+)/$', client_views.success_ticket, name='success_ticket'),
+    re_path(r'^buy_ticket/$', client_views.buy_ticket, name='buy_ticket'),
+    re_path(r'^success_ticket/(?P<total_price>\d+(\.\d+)?)/(?P<promo>.*)/$', client_views.success_ticket, name='success_ticket'),
     re_path(r'^information_tickets/$', client_views.index_information_tickets, name='index_information_tickets'),
+    re_path(r'^cart/$', client_views.cart, name='cart'),
+    re_path(r'^add_cart/(?P<pk>\d+)/$', client_views.add_cart, name='add_cart'),
+    re_path(r'^remove_cart_item/(?P<item_id>\d+)/$', client_views.remove_cart_item, name='remove_cart_item'),
 
     # re_path(r'^use_coupon/(?P<pk>\d+)/$', client_views.use_coupon, name='use_coupon'),
 

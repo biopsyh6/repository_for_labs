@@ -3,28 +3,36 @@
 {% block header %}Coupons{% endblock %}
 
 {% block content %}
+<section>
     <h2>Valid coupons</h2>
         {% for coupon in coupons %}
-            {% if coupon.is_available %}
-                <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
-                    <p>Name: {{ coupon.name }}</p>
-                    <p>Promo: {{ coupon.promo }}</p>
-                    <p>Discount: {{ coupon.discount }} percent</p>
-                    {% comment %} {% if request.user.client and not request.user.is_superuser %}
-                        <form action="{% url 'use_coupon' pk=coupon.pk %}" method="post">
-                            {% csrf_token %}
-                            <button type="submit">Use Coupon</button>
-                        </form>
-                    {% endif %} {% endcomment %}
-                </div>
-            {% endif %}
+            <article>
+                {% if coupon.is_available %}
+                    <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+                        <p>Name: {{ coupon.name }}</p>
+                        <p>Promo: {{ coupon.promo }}</p>
+                        <p>Discount: {{ coupon.discount }} percent</p>
+                        {% comment %} {% if request.user.client and not request.user.is_superuser %}
+                            <form action="{% url 'use_coupon' pk=coupon.pk %}" method="post">
+                                {% csrf_token %}
+                                <button type="submit">Use Coupon</button>
+                            </form>
+                        {% endif %} {% endcomment %}
+                    </div>
+                {% endif %}
+            </article>
         {% endfor %}
+</section>
+<section>
     <h2>Archive</h2>
         {% for coupon in used_coupons %}
-        <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
-            <p>Name: {{ coupon.coupon.name }}</p>
-            <p>Discount: {{ coupon.coupon.discount }} percent</p>
-            <p>Used by: {{ coupon.user.name }} | {{ coupon.user.surname }} | {{ coupon.user.email }}</p>
-        </div>
+            <article>
+                <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+                    <p>Name: {{ coupon.coupon.name }}</p>
+                    <p>Discount: {{ coupon.coupon.discount }} percent</p>
+                    <p>Used by: {{ coupon.user.name }} | {{ coupon.user.surname }} | {{ coupon.user.email }}</p>
+                </div>
+            </article>
         {% endfor %}
+</section>
 {% endblock %}
