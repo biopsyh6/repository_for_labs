@@ -1,0 +1,16 @@
+{% extends 'cinema/admin/base_admin.html' %}
+
+{% block header %}List of Tickets{% endblock %}
+
+{% block content %}
+        {% for ticket in tickets %}
+        <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+            <p style="margin-bottom: 2px;">Movie Title: {{ ticket.session.movie.title }}</p>
+            <p style="margin-bottom: 2px;">Hall: {{ ticket.session.hall.name }}</p>
+            <p style="margin-bottom: 2px;">Start Time: {{ ticket.session.start_time }}</p>
+            <p style="margin-bottom: 2px;">End Time: {{ ticket.session.end_time }}</p>
+            <p style="margin-bottom: 2px;">Price: {{ ticket.price }}$</p>
+            <p style="margin-bottom: 2px;">Cashier: {{ ticket.employee.name }} {{ ticket.employee.surname }}</p>
+        </div>
+        {% endfor %}
+{% endblock %}

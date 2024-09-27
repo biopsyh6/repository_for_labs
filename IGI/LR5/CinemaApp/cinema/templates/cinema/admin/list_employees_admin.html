@@ -1,0 +1,17 @@
+{% extends 'cinema/admin/base_admin.html' %}
+
+{% block header %}List of Employees{% endblock %}
+
+{% block content %}
+        {% for employee in employees %}
+        <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+            <p style="margin-bottom: 2px;">Name: {{ employee.name }}</p>
+            <p style="margin-bottom: 2px;">Surname: {{ employee.surname }}</p>
+            <p style="margin-bottom: 2px;">Email: {{ employee.email }}</p>
+            <p style="margin-bottom: 2px;">Birth date: {{ employee.birth_date }}</p>
+            <p style="margin-bottom: 2px;">Role: {{ employee.get_role_display }}</p>
+            <p style="margin-bottom: 2px;">Phone Number: {{ employee.phone_number }}</p>
+            <img src="{{ employee.image.url }}" height="200", width="200">
+        </div>
+        {% endfor %}
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'cinema/base.html' %}
+
+{% block header %}Cart{% endblock %}
+
+{% block content %}
+    <section>
+        {% if cart_items %}
+            <h2>Tickets in Your Cart</h2>
+            <ul>
+                {% for item in cart_items %}
+                    <article>
+                        {% if item.ticket and item.ticket.price %}
+                            <li>{{ item.ticket.session.movie.title }} - Amount: {{ item.amount }}. Session: {{ item.ticket.session.start_time }}. Price: {{ item.get_price}}
+                            <form action="{% url 'remove_cart_item' item.id %}" method="post" style="display:inline;">
+                                {% csrf_token %}
+                                <button type="submit">Remove</button>
+                            </form>
+                            </li>
+                        {% endif %}
+                    </article>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </section>
+    {% if total_price %}
+        <p>Total Price: {{ total_price }}</p>
+
+
+        <form action="{% url 'buy_ticket' %}" method="post">
+            {% csrf_token %}
+            <p><input type="text" name="promo_code" placeholder="Enter promo code" tabindex="1"></p>
+            <button type="submit" tabindex="2">Buy Tickets</button>
+        </form>
+
+    {% endif %}
+
+
+{% endblock %}

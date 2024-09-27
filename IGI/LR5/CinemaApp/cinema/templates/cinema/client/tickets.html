@@ -1,0 +1,36 @@
+{% extends 'cinema/base.html' %}
+
+{% block header %}Tickets for {{ movie.title }}{% endblock %}
+
+{% block content %}
+    <form method="GET">
+        {{ form.as_p }}
+        <button type="submit" style="margin-bottom: 6px; margin-top: 10px;">Filter</button>
+    </form>
+    {% if tickets %}
+        <h2>Available Tickets:</h2>
+        <section itemscope itemtype="https://schema.org/Ticket">
+            {% for ticket in tickets %}
+                <article>
+                    {% if not ticket.is_sold %}
+                        <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+                            <p style="margin-bottom: 2px;">Session: <time datetime="{{ ticket.session.start_time }}">{{ ticket.session.start_time }}</time></p>
+                            <p itemprop="totalPrice" style="margin-bottom: 2px;">Price: {{ ticket.price }}$</p>
+                            <p itemprop="underName" style="margin-bottom: 2px;">Cashier: {{ ticket.employee.name }} {{ ticket.employee.surname }}</p>
+                            <p style="margin-bottom: 2px;">Amount: {{ ticket.amount }}</p>
+                            <form action="{% url 'add_cart' pk=ticket.pk %}" method="post">
+                                {% csrf_token %}
+                                <label for="amount">Amount of tickets:</label>
+                                <input type="number" id="amount" name="amount" min="0" max="{{ ticket.amount }}" value="0">
+                                {% comment %} <p><input type="text" name="promo_code" placeholder="Enter promo code"></p> {% endcomment %}
+                                <button type="submit">Add to Cart</button>
+                            </form>
+                        </div>
+                    {% endif %}
+                </article>
+            {% endfor %}
+        </section>
+    {% else %}
+        <p><b>No tickets available for this movie.</b></p>
+    {% endif %}
+{% endblock %}

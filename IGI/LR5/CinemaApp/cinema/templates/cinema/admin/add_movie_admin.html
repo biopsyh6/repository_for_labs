@@ -1,0 +1,12 @@
+{% extends 'cinema/admin/base_admin.html' %}
+
+{% block header %}Add Movie{% endblock %}
+
+{% block content %}
+<form method="POST" enctype='multipart/form-data'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+
+{% endblock %}

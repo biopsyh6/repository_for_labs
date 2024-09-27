@@ -1,0 +1,16 @@
+{% extends 'cinema/base.html' %}
+
+{% block header %}Vacancies{% endblock %}
+
+{% block content %}
+    <section itemscope itemtype="https://schema.org/JobPosting">
+        {% for vac in  all_vacancies%}
+                <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
+                    <h2 itemprop="title">{{ vac.name }}</h2>
+                    <p itemprop="qualifications">Description: {{ vac.description }}</p>
+                    <p itemprop="skills">Requirements: {{ vac.requirements }}</p>
+                    <p itemprop="salaryCurrency">Salary: {{ vac.salary }}</p>
+                </div>
+        {% endfor %}
+    </section>
+{% endblock %}

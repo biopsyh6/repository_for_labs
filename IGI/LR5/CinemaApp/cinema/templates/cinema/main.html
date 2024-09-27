@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% extends 'cinema/base.html' %}
+{% block title %}Main{% endblock title %}
+{% block header %}
+
+<section>
+    <picture>
+        <source media="(max_width: 700px)"
+            sizes="(max_width: 500px) 50vw, 10vw"
+            srcset="\media\logo\movie_party.jpg 138w">
+        <source media="(max_width: 1400px)"
+            sizes="(max_width: 1000px) 100vw, 30vw"
+            srcset="\media\logo\movie_party.jpg 416w">
+        <img src="\media\logo\movie_party.jpg" alt="banner">
+            
+    </picture>
+    {% comment %} <img src="\media\logo\movie_party.jpg" alt="banner" height="100" width="200"> {% endcomment %}
+    <img src="\media\logo\movie_night.jpg" alt="banner" height="100" width="200">
+    <img src="\media\logo\retro.jpg" alt="banner" height="100" width="200">
+</section>
+
+Main
+
+{% endblock %}
+
+{% block content %}
+<div class="content-container">
+    <div class="main-content">
+    <nav>
+        <a href="#catalog">Catalog</a>
+        <a href="#partners">Partners</a>
+        <a href="#news">Last News</a>
+    </nav>
+    
+    <body>
+        {% if session %}
+        <section>
+            <article>
+                <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+                    <h2>Last published session</h2>
+                    <p>Film: {{ session.movie }}</p>
+                    <p>Hall: {{ session.hall }}</p>
+                    <p>Start time: {{ session.start_time }}</p>
+                    <p>End time: {{ session.end_time }}</p>
+                </div>
+            </article>
+        </section>
+        {% else %}
+            <p><em>Sessions have not yet been published.</em></p>
+        {% endif %}
+        <aside id="catalog">
+            <hgroup>
+                <h2>Catalog</h2>
+                <h3>Look at this</h3>
+                <h3>We have tickets</h3>
+            </hgroup>
+            <ul>
+            {% for ticket in ticket_info %}
+                <li>
+                <a href="{% url 'movie_tickets' pk=ticket.movie.id %}">
+                {{ ticket.movie_title }} - {{ ticket.price }}
+                </a>
+                </li>
+            {% empty %}
+                <li><em>No tickets available.</em></li>
+            {% endfor %}
+            </ul>
+        </aside>
+        <hr>
+        <figure id="news">
+            <hgroup>
+                <h2>{{ latest_news.title }}</h2>
+                <h3>{{ latest_news.description }}</h3>
+            </hgroup>
+            <img src="{{ latest_news.image_url }} height="200" width="200"">
+        </figure>
+        <hr>
+        <footer id="partners">
+            <figure>
+                <figcaption><h3>Partners</h3></figcaption>
+                {% for partner in partners %}
+                    <a href="{{ partner.link }}" style="margin-right: 25px;" target="fr">
+                        <img src="{{ partner.logo.url }}" width="75"/>
+                    </a>
+                {% endfor %}
+                <iframe name="fr" width="800" height="400">Partner site</iframe>
+            </figure>
+        </footer>
+    </body>
+    </div>
+<div>
+{% endblock content %}
