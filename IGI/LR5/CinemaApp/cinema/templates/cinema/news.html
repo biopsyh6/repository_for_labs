@@ -1,21 +1,28 @@
 {% extends 'cinema/base.html' %}
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\news.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}News{% endblock %}
 {% block content %}
-    <section itemscope itemtype="https://schema.org/NewsArticle">
+    <section itemscope itemtype="https://schema.org/NewsArticle" class="news-container">
         {% for n in news %}
         <div itemprop="articleBody" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
             <h2>{{ n.title }}</h2>
-            <table>
+            <table> 
                 <tr>
-                    <p>
-                        <img src="{{ n.image.url }}" height="200">
-                    </p>
-                    <p>
-                        {{ n.summary }}
-                    </p>
-                    <a href="{% url 'full_description' n.id %}">
-                        <p><em>Read more</em></p>
-                    </a>
+                    <td>
+                        <p>
+                            <img src="{{ n.image.url }}" height="200">
+                        </p>
+                        <p class="letter">
+                            {{ n.description }}
+                        </p>
+                        <a href="{% url 'full_description' n.id %}">
+                            <p><em>Read more</em></p>
+                        </a>
+                    </td>
                 </tr>
             </table>
         </div>

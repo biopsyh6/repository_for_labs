@@ -1,11 +1,16 @@
 {% extends 'cinema/base.html' %}
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\profile.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}Profile{% endblock %}
 {% block content %}
-<article>
-    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+<article class="profile-container"> 
+    <div class="info">
         <ul>
             <li>
-                <img src="{{ profile.image.url }}" height="200">
+                <img class="ava" src="{{ profile.image.url }}" alt="Profile picture" height="200">
             </li>
             <li>
                 <lable>Name:</lable>
@@ -34,9 +39,9 @@
         {% endif %}
     </div>
 </article>
-<section>
+<section class="profile-container">
     {% if request.user.client and not request.user.is_superuser and not request.user.employee %}
-        <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+        <div class="info-tickets">
             <a href="{% url 'index_information_tickets' %}">Information about purchased tickets</a>
         </div>
     {% endif %}

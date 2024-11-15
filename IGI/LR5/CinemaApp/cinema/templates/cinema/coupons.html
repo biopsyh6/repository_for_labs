@@ -1,5 +1,10 @@
 {% extends 'cinema/base.html' %}
-
+{% load static %}
+{% block title %}Coupons{% endblock title %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\coupons.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}Coupons{% endblock %}
 
 {% block content %}
@@ -8,17 +13,17 @@
         {% for coupon in coupons %}
             <article>
                 {% if coupon.is_available %}
-                    <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
-                        <p>Name: {{ coupon.name }}</p>
-                        <p>Promo: {{ coupon.promo }}</p>
-                        <p>Discount: {{ coupon.discount }} percent</p>
+                    <ul class="available">
+                        <li>Name: {{ coupon.name }}</li>
+                        <li>Promo: {{ coupon.promo }}</li>
+                        <li>Discount: {{ coupon.discount }} percent</li>
                         {% comment %} {% if request.user.client and not request.user.is_superuser %}
                             <form action="{% url 'use_coupon' pk=coupon.pk %}" method="post">
                                 {% csrf_token %}
                                 <button type="submit">Use Coupon</button>
                             </form>
                         {% endif %} {% endcomment %}
-                    </div>
+                    </ul>
                 {% endif %}
             </article>
         {% endfor %}
@@ -27,11 +32,11 @@
     <h2>Archive</h2>
         {% for coupon in used_coupons %}
             <article>
-                <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
-                    <p>Name: {{ coupon.coupon.name }}</p>
-                    <p>Discount: {{ coupon.coupon.discount }} percent</p>
-                    <p>Used by: {{ coupon.user.name }} | {{ coupon.user.surname }} | {{ coupon.user.email }}</p>
-                </div>
+                <ul class="archive">
+                    <li>Name: {{ coupon.coupon.name }}</li>
+                    <li>Discount: {{ coupon.coupon.discount }} percent</li>
+                    <li>Used by: {{ coupon.user.name }} | {{ coupon.user.surname }} | {{ coupon.user.email }}</li>
+                </ul>
             </article>
         {% endfor %}
 </section>

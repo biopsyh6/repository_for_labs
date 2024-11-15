@@ -1,37 +1,98 @@
 {% extends 'cinema/admin/base_admin.html' %}
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\admin\statistics.css' %}" type="text/css"/>
+{% endblock %}
 
 {% block header %}Statistics{% endblock %}
 
 {% block content %}
-    <section>
-        <h2>Daily Sales:</h2>
-        {% for sale in daily_sales %}
-            <p>Date: {{ sale.day }} - Total Sales: {{ sale.total_sales|floatformat:2 }}$</p>
-        {% endfor %}
+    <section class="table">
+        {% comment %} <h2>Daily Sales:</h2> {% endcomment %}
+        <table class="daily-sales">
+            <caption>Daily Sales</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Date</th>
+                    <th>Total Sales</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for sale in daily_sales %}
+                    <tr>
+                        <th>{{ forloop.counter }}</th>
+                        <td>{{ sale.day }}</td>
+                        <td>{{ sale.total_sales|floatformat:2 }}$</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </section>
-    <section>
-        <h2>Sales by Session:</h2>
-        {% for sale in session_sales %}
-            <p>Session ID: {{ sale.ticket__session }} - Total Sales: {{ sale.total_sales|floatformat:2 }}$</p>
-        {% endfor %}
+    <section class="table">
+        {% comment %} <h2>Sales by Session:</h2> {% endcomment %}
+        <table class="sales-session">
+            <caption>Sales by Session</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Session ID</th>
+                    <th>Total Sales</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for sale in session_sales %}
+                    <tr>
+                        <th>{{ forloop.counter }}</th>
+                        <td>{{ sale.ticket__session }}</td>
+                        <td>{{ sale.total_sales|floatformat:2 }}$</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </section>
-    <section>
-        <h2>Sales by Movie:</h2>
-        {% for sale in movie_sales %}
+    <section class="table">
+        {% comment %} <h2>Sales by Movie:</h2> {% endcomment %}
+        <table class="sales-movie">
+            <caption>Sales by Movie</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Movie</th>
+                    <th>Total Sales</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for sale in movie_sales %}
+                    <tr>
+                        <th>{{ forloop.counter }}</th>
+                        <td>{{ sale.ticket__session__movie__title }}</td>
+                        <td>{{ sale.total_sales|floatformat:2 }}$</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% comment %} {% for sale in movie_sales %}
             <p>Movie: {{ sale.ticket__session__movie__title }} - Total Sales: {{ sale.total_sales|floatformat:2 }}$</p>
-        {% endfor %}
+        {% endfor %} {% endcomment %}
     </section>
     <section>
         <h2>List of films in alphabetical order</h2>
         {% for movie_alpha in movies_alpha %}
-            <p>Movie: {{ movie_alpha }}</p>
+            <ul>
+            <li>Movie: {{ movie_alpha }}</li>
+            </ul>
         {% endfor %}
     </section>
     <section>
         <h2>Total Sales</h2>
-            <p>{{ total_sales }}$</p>
-        <h2>Mean, mode and median by sales amount:</h2>
-        <table border="1">
+        <p>{{ total_sales }}$</p>
+    </section>
+    <section class="table">
+        {% comment %} <h2>Mean, mode and median by sales amount:</h2> {% endcomment %}
+        <table class="parameters-sales" border="1">
+            <caption>Mean, mode and median by sales amount</caption>
             <thead>
                 <tr>
                     <th colspan="2">By sales amount</th>
@@ -58,9 +119,10 @@
             </tbody>
         </table>
     </section>
-    <section>
-        <h2>Mean and median by client age</h2>
-        <table border="1">
+    <section class="table">
+        {% comment %} <h2>Mean and median by client age</h2> {% endcomment %}
+        <table class="parameters-ages" border="1">
+            <caption>Mean and median by client age</caption>
             <thead>
                 <tr>
                     <th colspan="2">By client age</th>

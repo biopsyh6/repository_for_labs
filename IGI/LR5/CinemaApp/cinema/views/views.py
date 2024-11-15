@@ -306,20 +306,41 @@ def add_review(request):
     """
     Add Review object to database.
     """
+    # if request.method == "POST":
+    #     form = ReviewForm(request.POST)
+    #     if form.is_valid():
+    #         review = form.save()
+    #         review.sender = request.user.client
+    #         review.save()
+    #         logger.info(f"Add review successfully")
+    #         return HttpResponseRedirect(reverse('reviews'))
+    #     else:
+    #         logger.warning(f"Add review form is invalid")
+    #         return render(request, "cinema/add_review.html", {"form": form})
+    # else:
+    #     form = ReviewForm()
+    #     return render(request, "cinema/add_review.html", {"form": form})
     if request.method == "POST":
-        form = ReviewForm(request.POST)
-        if form.is_valid():
-            review = form.save()
-            review.sender = request.user.client
-            review.save()
-            logger.info(f"Add review successfully")
-            return HttpResponseRedirect(reverse('reviews'))
-        else:
-            logger.warning(f"Add review form is invalid")
-            return render(request, "cinema/add_review.html", {"form": form})
+        text = request.POST.get("text")
+        rate = request.POST.get("rate")
+
+        if text and rate:
+            try:
+                rate = int(rate)
+                if 1 <= rate <= 5:
+                    review = Review.objects.create(sender=request.user.client,
+                                                   text=text,
+                                                   rate=rate)
+                    logger.info("Review added successfully")
+                    return HttpResponseRedirect(reverse('reviews'))
+                else:
+                    logger.warning("Rate is out of range")
+            except ValueError:
+                logger.warning("Invalid rate value")
+        logger.warning("Form data is invalid")
+        return render(request, "cinema/add_review.html", {"error": "Invalid data"})
     else:
-        form = ReviewForm()
-        return render(request, "cinema/add_review.html", {"form": form})
+        return render(request, "cinema/add_review.html")
     
 def coupons(request):
     """

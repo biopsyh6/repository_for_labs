@@ -1,19 +1,28 @@
 {% extends 'cinema/base.html' %}
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\review.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}Reviews{% endblock %}
 
 {% block content %}
+    <section class="review-container">
     {% comment %} {% if is_auth %} {% endcomment %}
         <a href="{% url 'add_review' %}">Add Review</a>
     {% comment %} {% endif %} {% endcomment %}
+    </section>
     {% for review in all_reviews %}
     <section>
-        <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+        <div class="review-block">
             <section itemscope itemtype="https://schema.org/Review">
-                <p>Name: {{ review.sender.name }}</p>
-                <p>Surname: {{ review.sender.surname }}</p>
-                <p itemprop="reviewRating">Rate: {{ review.rate }}</p>
-                <p>Date: {{ review.date }}</p>
-                <p itemprop="reviewBody">Comment: {{ review.text }}</p>
+                <ul class="review-list">
+                    <li class="review-item">Name: {{ review.sender.name }}</li>
+                    <li class="review-item">Surname: {{ review.sender.surname }}</li>
+                    <li itemprop="reviewRating" class="review-item">Rate: {{ review.rate }}</li>
+                    <li class="review-item">Date: {{ review.date }}</li>
+                    <li itemprop="reviewBody" class="review-item">Comment: {{ review.text }}</li>
+                </ul>
             </section>
         </div>
     </section>

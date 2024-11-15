@@ -1,18 +1,18 @@
 {% extends 'cinema/base.html' %}
-
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\news_info.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}Movie: {{ news_data.title }}{% endblock %}
 
 {% block content %}
-<section>
-    <article>
-        <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
+<section class="news-container">
+    <article class="news-item">
+        <div class="news-content">
             <h2>{{ news_data.title }}</h2>
-            <p>
-                <img src="{{ news_data.image.url }}" height="200">
-            </p>
-            <p>
-                {{ news_data.description }}
-            </p>
+            <img src="{{ news_data.image.url }}" class="news-image">
+            <p class="letter">{{ news_data.description }}</p>
         </div>
     </article>
 </section>

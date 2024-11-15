@@ -1,16 +1,22 @@
 {% extends 'cinema/base.html' %}
-
+{% load static %}
+{% block head %}
+    {{ block.super }}
+	<link rel="stylesheet" href="{% static 'css\vacancies.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}Vacancies{% endblock %}
 
 {% block content %}
     <section itemscope itemtype="https://schema.org/JobPosting">
         {% for vac in  all_vacancies%}
-                <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
-                    <h2 itemprop="title">{{ vac.name }}</h2>
+            <div class="vacancy-block">
+                <h2 itemprop="title">{{ vac.name }}</h2>
+                <div class="vacancy-details">
                     <p itemprop="qualifications">Description: {{ vac.description }}</p>
                     <p itemprop="skills">Requirements: {{ vac.requirements }}</p>
                     <p itemprop="salaryCurrency">Salary: {{ vac.salary }}</p>
                 </div>
+            </div>
         {% endfor %}
     </section>
 {% endblock %}

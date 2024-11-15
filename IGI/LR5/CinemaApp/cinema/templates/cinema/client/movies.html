@@ -1,30 +1,58 @@
 {% extends 'cinema/base.html' %}
-
+{% load static %}
+{% block head %}
+    {{ block.super }}
+	<link rel="stylesheet" href="{% static 'css\movies.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}List of Movies{% endblock %}
 
 {% block content %}
-    <form method="GET">
+    {% comment %} <form method="GET">
         {{ form.as_p }}
         <button type="submit" style="margin-bottom: 6px; margin-top: 6px;">Filter</button>
+    </form> {% endcomment %}
+
+    <form method="GET" class="movies-form">
+        <div class="form-group">
+            <label for="genre">Genre:</label>
+            <select name="genre" id="genre">
+                <option value="">Any</option>
+                {% for genre in form.genre.field.queryset %}
+                    <option value="{{ genre.pk }}" {% if form.genre.value == genre.pk|stringformat:"s" %}selected{% endif %}>{{ genre.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="min_rating">Min Rating:</label>
+            <input type="number" name="min_rating" id="min_rating" min="0" max="10" step="0.1" value="{{ form.min_rating.value }}">
+        </div>
+        <div class="form-group">
+            <label for="max_rating">Max Rating:</label>
+            <input type="number" name="max_rating" id="max_rating" min="0" max="10" step="0.1" value="{{ form.max_rating.value }}">
+        </div>
+        <button type="submit" class="form-input" class="submit-button">Filter</button>
     </form>
-    <section itemscope itemtype="https://schema.org/Movie">
+
+    <section class="info" itemscope itemtype="https://schema.org/Movie">
         {% for movie in movies %}
-        <article>
-            <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
-                <p itemprop="title" style="margin-bottom: 2px;">Title: <em>{{ movie.title }}</em></p>
-                <p itemprop="countryOfOrigin" style="margin-bottom: 2px;">Country: {{ movie.country }}</p>
-                <p itemprop="genre" style="margin-bottom: 2px;">Genre: {{ movie.display_genre }}</p>
-                <p itemprop="duration" style="margin-bottom: 2px;">Duration: {{ movie.duration }}</p>
-                <p style="margin-bottom: 2px;">Budget: {{ movie.budget }}$</p>
-                <p style="margin-bottom: 2px;">Description: {{ movie.description }}</p>
-                <p style="margin-bottom: 4px;">Rating: {{ movie.rating }}</p>
-                <img src="{{ movie.poster.url }}" height="200", width="200">
-                {% comment %} <a style="margin-bottom: 6px;" href="{% url 'movie_tickets' pk=movie.pk %}">View Tickets</a> {% endcomment %}
-                {% if request.user.client and not request.user.is_superuser and not request.user.employee %}
-                    <form action="{% url 'movie_tickets' pk=movie.pk %}" method="get" style="margin-bottom: 6px; margin-top: 10px;">
-                        <button type="submit">View Tickets</button>
-                    </form>
-                {% endif %}
+        <article class="part-info">
+            <div class="movie_info">
+                <img class="poster" src="{{ movie.poster.url }}">
+                <div class="movie_text">
+                    <p class="page_info" itemprop="title">Title: <em>{{ movie.title }}</em></p>
+                    <p class="page_info" itemprop="countryOfOrigin">Country: {{ movie.country }}</p>
+                    <p class="page_info" itemprop="genre">Genre: {{ movie.display_genre }}</p>
+                    <p class="page_info" itemprop="duration">Duration: {{ movie.duration }}</p>
+                    <p class="page_info">Budget: {{ movie.budget }}$</p>
+                    <p class="page_info">Description: {{ movie.description }}</p>
+                    <p class="page_info">Rating: {{ movie.rating }}</p>
+                    {% comment %} <a style="margin-bottom: 6px;" href="{% url 'movie_tickets' pk=movie.pk %}">View Tickets</a> {% endcomment %}
+                    {% if request.user.client and not request.user.is_superuser and not request.user.employee %}
+                        <form action="{% url 'movie_tickets' pk=movie.pk %}" method="get" class="send_form">
+                            <button type="submit" class="form-input view_button">View Tickets</button>
+                        </form>
+                    {% endif %}
+                </div>
             </div>
         </article>
         {% endfor %}

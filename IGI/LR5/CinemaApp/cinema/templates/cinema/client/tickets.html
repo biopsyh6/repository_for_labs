@@ -1,30 +1,58 @@
 {% extends 'cinema/base.html' %}
-
+{% load static %}
+{% block head %}
+    {{ block.super }}
+	<link rel="stylesheet" href="{% static 'css\tickets.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}Tickets for {{ movie.title }}{% endblock %}
 
 {% block content %}
-    <form method="GET">
+    {% comment %} <form method="GET">
         {{ form.as_p }}
         <button type="submit" style="margin-bottom: 6px; margin-top: 10px;">Filter</button>
+    </form> {% endcomment %}
+
+    <form method="GET" class="tickets-form">
+        <div class="form-group">
+            <label for="min_price">Minimum Price:</label>
+            <input type="number" id="min_price" name="min_price" step="0.01" min="0" value="{{ request.GET.min_price }}" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="max_price">Maximum Price:</label>
+            <input type="number" id="max_price" name="max_price" step="0.01" min="0" value="{{ request.GET.max_price }}" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" value="{{ request.GET.date }}" class="form-control">
+        </div>
+
+        <button type="submit" class="form-input" class="submit-button">Filter</button>
     </form>
+
     {% if tickets %}
         <h2>Available Tickets:</h2>
         <section itemscope itemtype="https://schema.org/Ticket">
             {% for ticket in tickets %}
                 <article>
                     {% if not ticket.is_sold %}
-                        <div style="display: flex; flex-direction:column; align-items: start; margin-bottom: 10px; border: 1px solid #ccc;">
-                            <p style="margin-bottom: 2px;">Session: <time datetime="{{ ticket.session.start_time }}">{{ ticket.session.start_time }}</time></p>
-                            <p itemprop="totalPrice" style="margin-bottom: 2px;">Price: {{ ticket.price }}$</p>
-                            <p itemprop="underName" style="margin-bottom: 2px;">Cashier: {{ ticket.employee.name }} {{ ticket.employee.surname }}</p>
-                            <p style="margin-bottom: 2px;">Amount: {{ ticket.amount }}</p>
-                            <form action="{% url 'add_cart' pk=ticket.pk %}" method="post">
+                        <div class="ticket_info">
+                            <form action="{% url 'add_cart' pk=ticket.pk %}" method="post" class="tickets-form-amount">
                                 {% csrf_token %}
-                                <label for="amount">Amount of tickets:</label>
-                                <input type="number" id="amount" name="amount" min="0" max="{{ ticket.amount }}" value="0">
+                                <div class="form-group">
+                                    <label for="amount">Amount of tickets:</label>
+                                    <input type="number" id="amount" name="amount" min="1" max="{{ ticket.amount }}" value="1">
+                                </div>
                                 {% comment %} <p><input type="text" name="promo_code" placeholder="Enter promo code"></p> {% endcomment %}
-                                <button type="submit">Add to Cart</button>
+                                <button type="submit" class="form-input" class="add-button">Add to Cart</button>
                             </form>
+                            <div class="ticket_text">
+                                <p class="page_info" style="margin-bottom: 2px;">Session: <time datetime="{{ ticket.session.start_time }}">{{ ticket.session.start_time }}</time></p>
+                                <p class="page_info" itemprop="totalPrice" style="margin-bottom: 2px;">Price: {{ ticket.price }}$</p>
+                                <p class="page_info" itemprop="underName" style="margin-bottom: 2px;">Cashier: {{ ticket.employee.name }} {{ ticket.employee.surname }}</p>
+                                <p class="page_info" style="margin-bottom: 2px;">Amount: {{ ticket.amount }}</p>
+                            </div>
                         </div>
                     {% endif %}
                 </article>

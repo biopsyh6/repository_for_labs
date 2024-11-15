@@ -1,23 +1,31 @@
 <!-- templates/cinema/home.html -->
-{% extends 'cinema/base.html' %}
+ {% extends 'cinema/base.html' %}
+{% load static %}
+
 {% load tz %}
 
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\home.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}Home{% endblock %}
 
 {% block content %}
-<section>
+<section class="home-container">
     {% if user.is_authenticated %}
-        Hi {{ user.username }}!
+        <p class="greetings">Hi {{ user.username }}!</p>
         <p>Date: {{ date }}</p>
         {% get_current_timezone as TIME_ZONE %}
-        User's TIMEZONE: {{ TIME_ZONE }}
+        <p>User's TIMEZONE: {{ TIME_ZONE }}</p>
         <p>Last date DB: {{ date_db }}</p>
-        <p><pre>{{ cal }}</pre></p>
-        <p><a href="{% url 'logout' %}">Logout</a></p>
+        <p class="cal"><pre>{{ cal }}</pre></p>
+        <p><a href="{% url 'logout' %}" class="form-link">Logout</a></p>
     {% else %}
         <p><b>You are not logged in</b></p>
-        <a href="{% url 'login' %}">Login</a> |
-        <a href="{% url 'register' %}">Register</a>
+        <br>
+        <a href="{% url 'login' %}" class="form-link">Login</a>
+        <br>
+        <a href="{% url 'register' %}" class="form-link">Register</a>
     {% endif %}
 </section>
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends 'cinema/base.html' %}
-
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\login.css' %}" type="text/css"/>
+{% endblock %}
 {% block content %}
 
 {% comment %} <form method="POST" novalidate>
@@ -16,15 +20,15 @@
         <b>
             <p>
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <input class="form-input" placeholder="Enter Username" type="text" id="username" name="username" required> 
             </p>
             <p>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input class="form-input" placeholder="Enter Password" type="password" id="password" name="password" required>
             </p>
         </b>
-        <button type="submit">Login</button>
-        <p>
+        <button class="form-input" type="submit">Login</button>
+        <p class="login-container">
             <em>Don't have an account? <a href="{% url 'register' %}">Sign up</a></em>
         </p>
     </center>

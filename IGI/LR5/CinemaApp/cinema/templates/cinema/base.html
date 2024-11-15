@@ -2,87 +2,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% block head %}
     <title>{% block title %}Your Cinema{% endblock %}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Pavel Kolesnikov">
     <meta name="description" content="Online-service - Cinema.">
     <link rel="shortcut icon" href="\media\icons\icon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css\stylesheet.css' %}" type="text/css"/>
+    {% endblock %}
 </head>
-<style>
-    .header-container {
-        display: flex;
-        align-items: start;
-    }
-    .header-container img {
-        margin-right: 10px;
-    }
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .nav-links a {
-        margin-right: 10px; 
-    }
-    .content-container {
-        display: flex;
-        margin-top: 20px;
-    }
-    .main-content {
-        flex: 1;
-    }
-    aside {
-    width: 40%;
-    {% comment %} padding-left: 0.5rem;
-    margin-left: 0.5rem;
-    float: right; {% endcomment %}
-    padding: 0.5rem;
-    box-shadow: inset 5px 0 5px -5px #29627e;
-    font-style: italic;
-    color: #29627e;
-    }
-    ul.nav{
-                margin-left: 0px;
-                padding-left: 0px;
-                list-style: none;
-            }
-    ul.nav a {
-                display: block;
-                width: 7em;
-                padding:10px;
-                background-color: #f4f4f4;
-                border-top: 1px dashed #333;
-                border-right: 1px dashed #333;
-                border-left: 5px solid #333;
-                text-decoration: none;
-                color: #333;
-            }
-    ul.nav li:last-child a {
-        border-bottom: 1px dashed #333;
-        }
-
-</style>
 <body>
     <h1>{% block header %}{% endblock header %}</h1>
     <section>
-        <nav>
-            <div class="header-container">
-                <a href="{% url 'main' %}">
-                    <img src="\media\logo\create_minimalistic_logo_for_cinemaservice.png" alt="logo" height="125" width="125">
-                </a>
-                <div class="nav-links">
+        <nav class="navMenu">
+            {% comment %} <div class="header-container"> {% endcomment %}
+                <section class="logo">
+                    <a href="{% url 'main' %}">
+                        <img src="\media\logo\create_minimalistic_logo_for_cinemaservice.png" alt="logo" height="80" width="80">
+                    </a>
+                </section>
+                {% comment %} <div class="nav-links"> {% endcomment %}
                 <a href="{% url 'home' %}">Home</a>
                 <a href="{% url 'profile' %}">Profile</a>
+                    
+                <a href="{% url 'main' %}">Main</a>
+                <a href="{% url 'news' %}">News</a>
+                <a href="{% url 'about' %}">About company</a>   
+
 
                 
                 
-                <a href="{% url 'faq' %}">FAQ</a> 
-                <a href="{% url 'contacts' %}">Contacts</a> 
-                <a href="{% url 'vacancies' %}">Vacancies</a> 
-                <a href="{% url 'reviews' %}">Reviews</a> 
                 <a href="{% url 'coupons' %}">Coupons</a> 
-                <a href="{% url 'privacy_policy' %}">Privacy Policy</a>
+                
                 {% if request.user.client or request.user.is_superuser %}
                     <a href="{% url 'cats' %}">Cat Facts</a> 
                 {% endif %}
@@ -96,18 +48,30 @@
                 {% if request.user.employee %}
                     <a href="{% url 'info_sales' %}">Sales</a> 
                 {% endif %}
+                {% comment %} </div> {% endcomment %}
+                <div class="dropdown">
+                    <a href="#" class="dropbth">More</a>
+                    <div class="dropdown-content">
+                        <a href="{% url 'faq' %}">FAQ</a> 
+                        <a href="{% url 'contacts' %}">Contacts</a> 
+                        <a href="{% url 'vacancies' %}">Vacancies</a> 
+                        <a href="{% url 'reviews' %}">Reviews</a>         
+                        <a href="{% url 'privacy_policy' %}">Privacy Policy</a>
+                    </div>
                 </div>
-            </div>
+                <div class="dot"></div>
+            {% comment %} </div> {% endcomment %}
         </nav>
-        <ul class="nav">
-            <a href="{% url 'main' %}">Main</a>
-            <a href="{% url 'news' %}">News</a>
-            <a href="{% url 'about' %}">About company</a>   
-        </ul>
+        {% comment %} <ul class="nav"> {% endcomment %}
+
+        {% comment %} </ul> {% endcomment %}
     </section>
     <hr>
 <main>
     <div>{% block content %}{% endblock content %}</div>
+    <section class="loader-section">
+        <div class="loader"></div>
+    </section>
 </main>
 <hr>
 <footer>

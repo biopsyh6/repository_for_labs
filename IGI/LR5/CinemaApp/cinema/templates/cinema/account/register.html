@@ -1,5 +1,10 @@
 <!-- templates/register.html -->
 {% extends 'cinema/base.html' %}
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\register.css' %}" type="text/css"/>
+{% endblock %}
 {% block content %}
 {% comment %} <form method="POST" enctype='multipart/form-data'>
     {% csrf_token %}
@@ -17,38 +22,40 @@
         <h2>Sign Up</h2>
         <p>
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input class="form-input" placeholder="Enter Username" type="text" id="username" name="username" required>
         </p>
         <p>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input class="form-input" placeholder="Enter Password" type="password" id="password" name="password" required>
         </p>
         <p>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input class="form-input" placeholder="Enter Name" type="text" id="name" name="name" required>
         </p>
         <p>
             <label for="surname">Surname:</label>
-            <input type="text" id="surname" name="surname" required>
+            <input class="form-input" placeholder="Enter Surname" type="text" id="surname" name="surname" required>
         </p>
         <p>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input class="form-input" placeholder="Enter Email" type="email" id="email" name="email" required>
         </p>
         <p>
             <label for="birth_date">Birth Date:</label>
-            <input type="date" id="birth_date" name="birth_date" class="form-control">
+            <input class="form-input" type="date" id="birth_date" name="birth_date" class="form-control">
         </p>
         <p>
             <label for="phone_number">Phone Number:</label>
-            <input type="text" id="phone_number" name="phone_number" required>
+            <input class="form-input" placeholder="Enter Phone Number" type="text" id="phone_number" name="phone_number" required>
         </p>
         <p>
-            <label for="image">Profile Image:</label>
-            <input type="file" id="image" name="image" class="form-control">
+            <label for="image" class="button_file">Profile Image</label>
+            <input class="form-input" type="file" id="image" name="image" class="form-control">
         </p>
-        <button type="submit">Register</button>
-        <p><em>Already have an account? <a href="{% url 'login' %}">Sign in</a></em></p>
+        <button class="form-input" type="submit">Register</button>
+        <p class="register-container">
+            <em>Already have an account? <a href="{% url 'login' %}">Sign in</a></em>
+        </p>
     </center>
 </form>
 {% endblock content%}

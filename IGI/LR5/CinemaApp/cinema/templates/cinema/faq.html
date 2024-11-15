@@ -1,4 +1,10 @@
 {% extends 'cinema/base.html' %}
+
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\faq.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}FAQ{% endblock %}
 
 {% block content %}
@@ -6,16 +12,16 @@
     <section>
         {% for term in all_terms%}
             <article>
-                <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
-                    <p>Question: {{ term.question }}</p>
+                <div class="faq">
+                    <p class="question">Question: {{ term.question }}</p>
                     <details>
-                        <summary>
+                        <summary class="faq-summary">
                             "Description
                         </summary>
-                        <p>Answer: {{ term.answer }}</p>
+                        <p class="faq-answer">Answer: {{ term.answer }}</p>
                     </details>
 
-                    <p>Date of Publication: <time datetime="{{ term.date }}">{{ term.date }}</time></p>
+                    <p class="date">Date of Publication: <time datetime="{{ term.date }}">{{ term.date }}</time></p>
                     {% comment %} <a href="{% url 'full_answer' term.id %}">
                         <p><em>Show Full Answer</em></p> {% endcomment %}
                     </a>
@@ -24,7 +30,7 @@
         {% endfor %}
     </section>
     <hr>
-    <section>
+    <section class="info">
         <dl>
             <dt>"Cinema" Online-Service</dt>
             <dd>is a platform that allows you to buy movie tickets anywhere at a convenient time.</dd>

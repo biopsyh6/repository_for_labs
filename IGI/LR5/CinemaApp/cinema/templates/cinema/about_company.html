@@ -1,49 +1,68 @@
 {% extends 'cinema/base.html' %}
-
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\about_company.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}About Company{% endblock %}
 
 {% block content %}
     <section translate="yes">
-        <section>
-            <video width="1024" src="\media\videos\ad.mp4"
+        <section class="logo-show">
+            <a>
+                <img src="\media\logo\create_minimalistic_logo_for_cinemaservice.png" alt="logo" height="300">
+            </a>
+        </section>
+        <section class="video">
+            <video width="1012" src="\media\videos\ad.mp4"
                     autoplay loop muted title="Ad-video">
             </video>
+            <div class="frame"></div>
         </section>
-        <section>
+        <section class="information">
+            <h4>Information</h4>
+            <ul>
             {% for info in company_info %}
-                <p>{{ info.text }}</p>
+                <li>{{ info.text }}</li>
             {% endfor %}
+            </ul>
         </section>
-        <hr>
-        <section style="display: flex; justify-content: center;">
-            <section style="text-align: center; border: 1px solid black; height: 500px; padding-left: 10px; padding-right: 10px;">
-                <hgroup>
-                    <h3>Certificate</h3>
-                    <h4>Online Cinema "Your Cinema"</h4>
-                </hgroup>
-                <p>This certificate certifies that</p>
-                <p><dfn title="Cinema">Cinema</dfn> - "Your Cinema"</p>
-                <p>is an official partner of the company "Belcinema"</p>
-                <p>Registered by the decision of the Minsk Regional Executive Committee dated <time datetime="2023-3-3">03.03.2023</time></p>
-                <p>in the Unified State Register of Legal Entities and Individual Entrepreneurs</p>
-                <br>
-                <section style="text-align: left;">
+        <section style="display: flex; justify-content: center;" class="main_section">
+            <section class="certificate">
+                <section class="main">
+                    <hgroup>
+                        <h3>Certificate</h3>
+                        <h4>Online Cinema "Your Cinema"</h4>
+                    </hgroup>
+                    <section class="pages">
+                        <p>This certificate certifies that</p>
+                        <p><dfn title="Cinema">Cinema</dfn> - "Your Cinema"</p>
+                        <p>is an official partner of the company "Belcinema"</p>
+                        <p>Registered by the decision of the <span class="underline">Minsk Regional Executive Committee</span></p>
+                        <p>dated <time datetime="2023-3-3">03.03.2023</time></p>
+                        <p>in the Unified State Register of Legal Entities and Individual Entrepreneurs</p>
+                    </section>
+                    <br>
+                </section>
+                <section class="contacts">
                     <p>Organization: Online Cinema <em>"Your Cinema"</em></p>
                     <p>Address: <em>Pushkina st. 20</em></p>
                     <p>Telephone Number: +375291111111</p>
                     <p>Email: yourcinema@gmail.com</p>
                     <p>Web-Site: <em>www.yourcinema.by</em></p>
                 </section>
+                <section class="stamp">
+                    <img src="/media/stamp/stamp.png">
+                </section>
             </section>
         </section>
         <br>
-        <section style="text-align: center;">
+        <section style="text-align: center;" class="about-container" class="main_section">
             <a href="\media\text\Certificate.docx" download="Certificate.docx">
                 Download certificate
             </a>
         </section>
-        <hr>
-        <section translate="yes" title="Listing">
+        <section translate="yes" title="Listing" class="main_section">
             <h4>Code Example</h4>
             <p>
                 <code>
@@ -55,18 +74,19 @@
             <p>The output from the code is <samp>I like 8 genres</samp></p>
             <p>When prompted for my favorite movie, I typed: <kbd>Taxi</kbd></p>
         </section>
-        <hr color="blue">
-        <section title="Quotes">
+        <section title="Quotes" class="main_section">
             <h4>Quote Example</h4>
-            <q cite="https://citaty.info/quote/24139">I didn't go to film school, I went to the movies.</q><br>
-            <hr>
-            <blockquote cite="https://citaty.info/quote/256110">
-                <p>The movie itself was very interesting, but I didn't think it was very good because after it ended I didn't feel any different than before watching it.</p>
-            </blockquote>
-            <p>-Stephen Chbosky</p>
+            <ul>
+                <li><p>Quote in English: <q lang="en" cite="https://citaty.info/quote/24139">When people ask me if I went to film school I tell them, 'no, I went to films.'</q></p></li>
+                <li><p>Quote in French: <q lang="fr" cite="https://citaty.info/quote/24139">Quand les gens me demandent si je suis allé à l'école de cinéma, je leur dis: Non, je suis allé au cinéma.</q></p></li>
+                <li><p>Quote in German: <q lang="de" cite="https://citaty.info/quote/24139">Wenn mich Leute fragen, ob ich in Filmschulen gegangen bin, dann sage ich ihnen: Nein, ich bin in Filme gegangen.</q></p></li>
+                <li><blockquote cite="https://citaty.info/quote/256110">
+                    <p>The movie itself was very interesting, but I didn't think it was very good because after it ended I didn't feel any different than before watching it.</p>
+                </blockquote></li>
+                <p>-Stephen Chbosky</p>
+            </ul>
         </section>
-        <hr color="blue">
-        <section title="Verse with br tag">
+        <section title="Verse with br tag" class="main_section">
             <h4>Verse Example</h4>
             <section>
                 Это город. Еще рано. Полусумрак, полусвет.<br>
@@ -75,12 +95,23 @@
                 Возникает звук рояля. Начинается кино.<brw>
             </section>
         </section>
-        <hr>
-        <section title="Audio Example">
-            <audio controls muted>
-                <source src="\media\audio\Amy Holland-She-s On Fire.mp3">
-                Audio content cannot be played
-            </audio>
+        <section title="Audio" class="main_section">
+            <h4>Audio Example</h4>
+            <section class="audio-container">
+                <audio controls muted>
+                    <source src="\media\audio\Amy Holland-She-s On Fire.mp3">
+                    Audio content cannot be played
+                </audio>
+            </section>
+        </section>
+        <section title="checkboxes" class="main_section">
+            <h4>Check Box Example</h4>
+            <section>
+                <input type="checkbox" name="cb1"><span>Orange</span><br>
+                <input type="checkbox" name="cb2"><span>Red</span><br>
+                <input type="radio" name="rd1"><span>Color</span><br>
+                <input type="radio" name="rd1"><span>Color</span><br>
+            </section>
         </section>
     </section>
     

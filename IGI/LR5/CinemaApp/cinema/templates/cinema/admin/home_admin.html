@@ -1,5 +1,9 @@
 {% extends 'cinema/admin/base_admin.html' %}
-
+{% load static %}
+{% block head %}
+    {{ block.super }}
+	{% comment %} <link rel="stylesheet" href="{% static 'css\add_review.css' %}" type="text/css"/> {% endcomment %}
+{% endblock %}
 {% block header %}Home Admin{% endblock %}
 
 {% block content %}

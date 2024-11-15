@@ -1,14 +1,22 @@
 {% extends 'cinema/base.html' %}
+
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css\cat_facts.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}Cat Facts{% endblock %}
 
 {% block content %}
 <section translate="yes">
-    {% for fact in facts %}
-        <article>
-            <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; margin-top: 20px">
-                <p>Fact: {{ fact }}</p>
-            </div>
-        </article>
-    {% endfor %}
+    <ul>
+        {% for fact in facts %}
+            <article>
+                <li>
+                    <p>Fact: {{ fact }}</p>
+                </li>
+            </article>
+        {% endfor %}
+    </ul>
 </section>
 {% endblock %}

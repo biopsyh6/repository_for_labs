@@ -1,5 +1,9 @@
 {% extends 'cinema/base.html' %}
-
+{% load static %}
+{% block head %}
+    {{ block.super }}
+	<link rel="stylesheet" href="{% static 'css\cart.css' %}" type="text/css"/>
+{% endblock %}
 {% block header %}Cart{% endblock %}
 
 {% block content %}
@@ -11,9 +15,11 @@
                     <article>
                         {% if item.ticket and item.ticket.price %}
                             <li>{{ item.ticket.session.movie.title }} - Amount: {{ item.amount }}. Session: {{ item.ticket.session.start_time }}. Price: {{ item.get_price}}
-                            <form action="{% url 'remove_cart_item' item.id %}" method="post" style="display:inline;">
+                            <form action="{% url 'remove_cart_item' item.id %}" method="post" style="display:inline;" class="remove-form">
                                 {% csrf_token %}
-                                <button type="submit">Remove</button>
+                                <span>
+                                    <button type="submit" class="form-input">Remove</button>
+                                </span>
                             </form>
                             </li>
                         {% endif %}
@@ -23,16 +29,13 @@
         {% endif %}
     </section>
     {% if total_price %}
-        <p>Total Price: {{ total_price }}</p>
-
-
-        <form action="{% url 'buy_ticket' %}" method="post">
+        <form action="{% url 'buy_ticket' %}" method="post" class="buy-form">
             {% csrf_token %}
-            <p><input type="text" name="promo_code" placeholder="Enter promo code" tabindex="1"></p>
-            <button type="submit" tabindex="2">Buy Tickets</button>
+            <span class="form-group">
+                <p class="total">Total Price: {{ total_price }}</p>
+                <p><input type="text" name="promo_code" placeholder="Enter promo code" tabindex="1"></p>
+            </span>
+            <button type="submit" tabindex="2" class="form-input">Buy Tickets</button>
         </form>
-
-    {% endif %}
-
-
+        {% endif %}
 {% endblock %}
